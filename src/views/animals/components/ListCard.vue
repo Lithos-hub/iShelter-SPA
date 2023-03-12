@@ -31,6 +31,8 @@
 
 <script setup lang="ts">
 import { Animal } from '@/models';
+import SpecieEmoji from './SpecieEmoji.vue';
+import StatusChip from './StatusChip.vue';
 
 interface Props {
 	data: Animal;
