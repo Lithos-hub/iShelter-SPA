@@ -3,8 +3,7 @@
 		v-model="dialog"
 		fullscreen
 		:scrim="false"
-		transition="dialog-bottom-transition"
-	>
+		transition="dialog-bottom-transition">
 		<v-card class="relative">
 			<v-toolbar dark color="primary">
 				<v-toolbar-title>{{ title }}</v-toolbar-title>
@@ -21,8 +20,7 @@
 				title="Guardar"
 				size="large"
 				rounded="pill"
-				class="ml-auto mt-auto m-5"
-			/>
+				class="ml-auto mt-auto m-5" />
 		</v-card>
 	</v-dialog>
 </template>

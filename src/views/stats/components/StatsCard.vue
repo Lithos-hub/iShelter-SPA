@@ -3,8 +3,7 @@
 		data-testid="stats-card"
 		class="col-span-4 rounded-xl pa-5"
 		title="Entrada de animales ⤵ "
-		elevation="0"
-	>
+		elevation="0">
 		<v-card-text class="mt-5">
 			<div class="flex mx-auto justify-between">
 				<div>
@@ -20,8 +19,7 @@
 						<v-icon
 							icon="mdi-menu-up"
 							class="text-ishelter-success"
-							:size="50"
-						></v-icon>
+							:size="50"></v-icon>
 					</div>
 				</div>
 			</div>

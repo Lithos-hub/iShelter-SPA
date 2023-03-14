@@ -4,8 +4,7 @@
 			<NavigationMenu
 				v-for="(item, i) of menuItems"
 				:key="i"
-				:menu-item="item"
-			/>
+				:menu-item="item" />
 		</div>
 	</v-app-bar>
 </template>

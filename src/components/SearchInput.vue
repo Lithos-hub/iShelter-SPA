@@ -3,13 +3,11 @@
 		<v-icon
 			icon="mdi-magnify"
 			size="30"
-			class="px-8 bg-primary-1 py-7 rounded-l-full text-white"
-		/>
+			class="px-8 bg-primary-1 py-7 rounded-l-full text-white" />
 		<v-text-field
 			color="primary"
 			v-bind="$attrs"
-			class="filled-input"
-		></v-text-field>
+			class="filled-input"></v-text-field>
 	</div>
 </template>
 

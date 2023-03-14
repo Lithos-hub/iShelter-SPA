@@ -6,8 +6,7 @@
 				max-height="50"
 				max-width="110"
 				contain
-				class="bg-white p-2 rounded-xl"
-			/>
+				class="bg-white p-2 rounded-xl" />
 		</router-link>
 
 		<v-spacer></v-spacer>
