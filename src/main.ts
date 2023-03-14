@@ -24,6 +24,7 @@ const myCustomLightTheme: ThemeDefinition = {
 		primary: '#fc4b6c',
 		secondary: '#fb9778',
 		black: '#0f172a',
+		error: '#ef4444',
 	},
 };
 

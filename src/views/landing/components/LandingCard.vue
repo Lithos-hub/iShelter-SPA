@@ -4,8 +4,7 @@
 			data-testid="home-card"
 			class="rounded-xl pa-5 text-center"
 			:title="title"
-			elevation="0"
-		>
+			elevation="0">
 			<v-card-text class="mt-5">
 				<h1 class="text-7xl" :class="color">
 					{{ value }}

@@ -3,8 +3,7 @@
 		color="primary"
 		class="text-none"
 		v-bind="$attrs"
-		@click="$emit('on-click')"
-	>
+		@click="$emit('action')">
 		{{ title }}
 	</v-btn>
 </template>
@@ -14,7 +13,7 @@ defineProps<{
 	title: string;
 }>();
 
-defineEmits(['on-click']);
+defineEmits(['action']);
 </script>
 
 <style scoped></style>

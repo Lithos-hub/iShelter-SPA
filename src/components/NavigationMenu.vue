@@ -4,8 +4,7 @@
 			<v-btn
 				v-bind="props"
 				:append-icon="isActive ? 'mdi-chevron-up' : 'mdi-chevron-down'"
-				class="text-none"
-			>
+				class="text-none">
 				{{ menuItem.title }}
 			</v-btn>
 		</template>
@@ -15,8 +14,7 @@
 				v-for="(item, i) in menuItem.items"
 				:key="i"
 				:value="item"
-				active-color="primary"
-			>
+				active-color="primary">
 				<template #prepend>
 					<v-icon :icon="item.icon"></v-icon>
 				</template>
@@ -29,8 +27,7 @@
 		v-else-if="menuItem.to"
 		:to="menuItem.to"
 		class="py-2 rounded-xl duration-200 w-[180px] text-center hover:text-primary-1"
-		active-class="bg-primary-1 hover:text-white"
-	>
+		active-class="bg-primary-1 hover:text-white">
 		{{ menuItem.title }}
 	</router-link>
 </template>

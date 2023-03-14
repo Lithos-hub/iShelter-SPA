@@ -7,8 +7,7 @@
 				}}</v-card-title>
 				<StatusChip
 					class="absolute top-0 right-0 w-[100px]"
-					:animal-status="data.status"
-				/>
+					:animal-status="data.status" />
 			</v-img>
 
 			<v-card-text class="flex justify-between">

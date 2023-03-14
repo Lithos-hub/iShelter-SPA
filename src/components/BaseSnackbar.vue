@@ -4,8 +4,7 @@
 		data-testid="base-snackbar"
 		:color="type"
 		:timeout="-1"
-		elevation="10"
-	>
+		elevation="10">
 		<div class="flex">
 			<v-icon :icon="getMessageIcon()" />
 			<div class="mx-auto">{{ message }}</div>

@@ -5,8 +5,7 @@
 				<v-avatar size="small">
 					<v-img
 						alt="Avatar"
-						src="https://this-person-does-not-exist.com/img/avatar-11326f146110d286731a8bc4b9b072f4.jpg"
-					></v-img>
+						src="https://this-person-does-not-exist.com/img/avatar-11326f146110d286731a8bc4b9b072f4.jpg"></v-img>
 				</v-avatar>
 			</v-btn>
 		</template>

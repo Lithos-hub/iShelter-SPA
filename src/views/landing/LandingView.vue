@@ -25,8 +25,7 @@
 					rounded="0"
 					color="primary"
 					group
-					class="rounded-xl"
-				>
+					class="rounded-xl">
 					<v-btn class="text-none" value="month"> Mes actual </v-btn>
 					<v-btn class="text-none" value="anual"> Año actual </v-btn>
 					<v-btn class="text-none" value="forever"> Desde siempre </v-btn>
