@@ -112,20 +112,6 @@ const generatorRef = ref<HTMLFormElement | null>(null);
 const { vModelForm } = storeToRefs(useFormGeneratorStore());
 const { setRef, setVModelForm } = useFormGeneratorStore();
 
-const initialValues = computed(() => {
-	return props.components.reduce(
-		(acc, { name, initialValue }) => ({
-			...acc,
-			[name as keyof typeof vModelForm]: initialValue,
-		}),
-		{}
-	);
-});
-
-useForm({
-	initialValues: initialValues.value,
-});
-
 setVModelForm(
 	props.components.reduce(
 		(acc, { name, initialValue }) => ({

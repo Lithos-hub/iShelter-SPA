@@ -1,71 +1,37 @@
 <template>
-	<FormGenerator :components="componentsList" />
-	<BaseButton title="Submit form" @action="onSubmit" />
+	<section class="flex justify-between mb-5 items-center">
+		<h1 class="text-5xl font-bold text-secondary-1">Mi organización</h1>
+		<BaseButton
+			title="Añadir nuevo animal"
+			rounded="pill"
+			size="large"
+			@click="dialog = !dialog" />
+		<FullScreenDialog
+			:open="dialog"
+			title="Añadir nuevo usuario"
+			@close="dialog = !dialog">
+			<div class="p-5">
+				<!-- <FormGenerator :components="componentsList" /> -->
+			</div>
+		</FullScreenDialog>
+	</section>
+	<section>
+		<DataFilters :is-loading="isLoading" />
+	</section>
+	<section>
+		<base-spinner v-if="isLoading" />
+		<section v-else class="grid grid-cols-4 gap-10">
+			<ListCard v-for="(user, i) of usersData?.data" :key="i" :data="user" />
+		</section>
+	</section>
 </template>
 
 <script lang="ts" setup>
-import { FormGeneratorInterface } from '@/models/FormGenerator.interface';
-import { useFormGeneratorStore } from '@/store/FormGenerator';
+import { useUsersQuery } from '../../services/apis/users';
+import DataFilters from './components/DataFilters.vue';
+import ListCard from './components/ListCard.vue';
 
-const { getVModelForm, validateForm } = useFormGeneratorStore();
+const { data: usersData, isLoading } = useUsersQuery();
 
-const componentsList: FormGeneratorInterface[] = [
-	{
-		renderElement: 'textfield',
-		name: 'item_textfield',
-		label: 'Write your email',
-		type: 'email',
-		colStart: 1,
-		colEnd: 7,
-		variant: 'solo',
-		rules: [(v) => !!v || 'Required!'],
-		initialValue: undefined,
-	},
-	{
-		renderElement: 'textarea',
-		name: 'item_textarea',
-		label: 'Write your bio',
-		type: 'text',
-		colStart: 7,
-		colEnd: 13,
-		variant: 'solo',
-		initialValue: undefined,
-	},
-	{
-		renderElement: 'select',
-		name: 'item_select',
-		label: 'Select an item',
-		colStart: 1,
-		colEnd: 5,
-		variant: 'solo',
-		items: ['item 1', 'item 2', 'item 3'],
-		initialValue: undefined,
-		rules: [(v) => !!v || 'Required!'],
-	},
-	{
-		renderElement: 'autocomplete',
-		name: 'item_autocomplete',
-		label: 'Search and select an item',
-		colStart: 5,
-		colEnd: 9,
-		variant: 'solo',
-		items: ['item 1', 'item 2', 'item 3'],
-		initialValue: undefined,
-	},
-	{
-		renderElement: 'checkbox',
-		name: 'item_checkbox',
-		label: 'True or false?',
-		colStart: 9,
-		colEnd: 13,
-		initialValue: false,
-	},
-];
-
-const onSubmit = async () => {
-	const { valid } = await validateForm();
-	if (valid) {
-		console.log('Submit!', getVModelForm());
-	}
-};
+const dialog = ref(false);
 </script>

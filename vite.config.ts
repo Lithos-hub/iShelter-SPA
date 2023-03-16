@@ -29,7 +29,7 @@ export default defineConfig({
 				/\.vue$/,
 				/\.vue\?vue/, // .vue
 			],
-			imports: ['vitest', 'pinia', 'vee-validate', 'vue', 'vue-router'],
+			imports: ['vitest', 'pinia', 'vue', 'vue-router'],
 			// dts: './auto-imports.d.ts',
 			dts: true,
 			eslintrc: {
