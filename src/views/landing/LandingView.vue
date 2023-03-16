@@ -1,7 +1,7 @@
 <template>
 	<div class="flex flex-col gap-5">
 		<div class="grid grid-cols-2 gap-5">
-			<card-layout>
+			<CardLayout>
 				<v-card class="rounded-xl pa-5" elevation="0">
 					<v-card-title>
 						<h1 class="text-5xl">{{ `Hola, ${user.name}! 😃` }}</h1>
@@ -11,15 +11,15 @@
 						<v-btn class="text-none mt-5" color="primary">Ver avisos</v-btn>
 					</v-card-text>
 				</v-card>
-			</card-layout>
-			<card-layout>
+			</CardLayout>
+			<CardLayout>
 				<v-card class="rounded-xl pa-5" title="Próximos eventos" elevation="0">
 					<v-card-text> Calendario </v-card-text>
 				</v-card>
-			</card-layout>
+			</CardLayout>
 		</div>
 		<div class="flex justify-center">
-			<card-layout>
+			<CardLayout>
 				<v-btn-toggle
 					v-model="filter"
 					rounded="0"
@@ -30,7 +30,7 @@
 					<v-btn class="text-none" value="anual"> Año actual </v-btn>
 					<v-btn class="text-none" value="forever"> Desde siempre </v-btn>
 				</v-btn-toggle>
-			</card-layout>
+			</CardLayout>
 		</div>
 		<div class="grid grid-cols-4 grow gap-10">
 			<LandingCard color="text-purple-500" title="Nuevos animales" :value="8" />

@@ -35,12 +35,44 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "10e1b00b-1639-4895-bfa9-9b9edb50b709",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "users",
+      "responses": [
+        {
+          "uuid": "82f45d40-778f-4d3e-ba49-4ae0222e1ebf",
+          "body": "[\n  {\n    \"id\": 1,\n    \"user_name\": \"John\",\n    \"user_lastname\": \"Doe\",\n    \"email\": \"johndoe@example.com\",\n    \"phone_first\": \"952 00 00 00\",\n    \"phone_second\": \"600 00 00 00\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen1137c03937fad3c64b6df4124a83b7a6.jpg\",\n    \"role\": \"staff\"\n  },\n  {\n    \"id\": 2,\n    \"user_name\": \"Jane\",\n    \"user_lastname\": \"Doe\",\n    \"email\": \"janedoe@example.com\",\n    \"phone_first\": \"952 00 00 00\",\n    \"phone_second\": \"600 00 00 00\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen11b5369598a4e9d67b87810dd4fddc13.jpg\",\n    \"role\": \"admin\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "rootChildren": [
     {
       "type": "route",
       "uuid": "ca14d4b3-9734-4ca9-813b-69a1f78c7cbd"
+    },
+    {
+      "type": "route",
+      "uuid": "10e1b00b-1639-4895-bfa9-9b9edb50b709"
     }
   ],
   "proxyMode": false,
