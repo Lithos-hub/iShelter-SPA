@@ -13,7 +13,7 @@ const emoji = () => {
 		cat: '🐱',
 	};
 
-	return options[props.specie as keyof typeof options];
+	return options[props.specie.toLowerCase() as keyof typeof options];
 };
 </script>
 

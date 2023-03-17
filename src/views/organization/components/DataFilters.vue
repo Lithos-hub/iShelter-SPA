@@ -3,7 +3,7 @@
 		<div class="flex-auto">
 			<SearchInput :is-loading="isLoading" label="Buscar usuario" />
 		</div>
-		<div class="flex-none w-[200px]">
+		<div class="flex-none w-[200px]" data-testid="data-filters">
 			<v-autocomplete
 				v-model="select"
 				clearable
