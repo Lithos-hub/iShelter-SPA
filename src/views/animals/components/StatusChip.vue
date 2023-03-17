@@ -20,7 +20,7 @@ const statusColor = () => {
 			'text-indigo-700 bg-purple-300 font-bold border border-indigo-500',
 	};
 
-	return options[props.animalStatus as keyof typeof options];
+	return options[props.animalStatus.toLowerCase() as keyof typeof options];
 };
 </script>
 
