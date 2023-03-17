@@ -45,7 +45,7 @@
       "responses": [
         {
           "uuid": "82f45d40-778f-4d3e-ba49-4ae0222e1ebf",
-          "body": "[\n  {\n    \"id\": 1,\n    \"user_name\": \"John\",\n    \"user_lastname\": \"Doe\",\n    \"email\": \"johndoe@example.com\",\n    \"phone_first\": \"952 00 00 00\",\n    \"phone_second\": \"600 00 00 00\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen1137c03937fad3c64b6df4124a83b7a6.jpg\",\n    \"role\": \"staff\"\n  },\n  {\n    \"id\": 2,\n    \"user_name\": \"Jane\",\n    \"user_lastname\": \"Doe\",\n    \"email\": \"janedoe@example.com\",\n    \"phone_first\": \"952 00 00 00\",\n    \"phone_second\": \"600 00 00 00\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen11b5369598a4e9d67b87810dd4fddc13.jpg\",\n    \"role\": \"admin\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": 1,\n    \"user_name\": \"John\",\n    \"user_lastname\": \"Doe\",\n    \"email\": \"johndoe@example.com\",\n    \"phone_first\": \"952 00 00 00\",\n    \"phone_second\": \"600 00 00 00\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen1137c03937fad3c64b6df4124a83b7a6.jpg\",\n    \"role\": \"staff\"\n  },\n  {\n    \"id\": 2,\n    \"user_name\": \"Jane\",\n    \"user_lastname\": \"Doe\",\n    \"email\": \"janedoe@example.com\",\n    \"phone_first\": \"952 00 00 00\",\n    \"phone_second\": \"600 00 00 00\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen11b5369598a4e9d67b87810dd4fddc13.jpg\",\n    \"role\": \"admin\"\n  },\n  {\n    \"id\": 3,\n    \"user_name\": \"David\",\n    \"user_lastname\": \"Smith\",\n    \"email\": \"davidsmith@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen1183c35752d57207fc90f5fa2b3a06ec.jpg\",\n    \"role\": \"staff\"\n  },\n  {\n    \"id\": 4,\n    \"user_name\": \"Emma\",\n    \"user_lastname\": \"Lee\",\n    \"email\": \"emmalee@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen37391462bb9cee8f88265c75a0c21a14.jpg\",\n    \"role\": \"staff\"\n  },\n  {\n    \"id\": 5,\n    \"user_name\": \"William\",\n    \"user_lastname\": \"Brown\",\n    \"email\": \"williambrown@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen11536a3308d3984b563bf9876f284d37.jpg\",\n    \"role\": \"volunteer\"\n  },\n  {\n    \"id\": 6,\n    \"user_name\": \"Olivia\",\n    \"user_lastname\": \"Garcia\",\n    \"email\": \"oliviagarcia@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen115ae5538bec9a676849fb523b245500.jpg\",\n    \"role\": \"volunteer\"\n  },\n  {\n    \"id\": 7,\n    \"user_name\": \"Ethan\",\n    \"user_lastname\": \"Martinez\",\n    \"email\": \"ethanmartinez@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen1180c79ef4415695551b224310eacedb.jpg\",\n    \"role\": \"staff\"\n  },\n  {\n    \"id\": 8,\n    \"user_name\": \"Nat\",\n    \"user_lastname\": \"Hernandez\",\n    \"email\": \"averyhernandez@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen28977dbe94506203ac527aff92b99d95.jpg\",\n    \"role\": \"volunteer\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -129,7 +129,63 @@
       "responses": [
         {
           "uuid": "37cec62f-8193-4d9a-ba02-c3738737a628",
-          "body": "[\n  {\n    \"label\": \"Healthy\",\n    \"value\": \"healthy\"\n  },\n  {\n    \"label\": \"Injured\",\n    \"value\": \"injured\"\n  },\n  {\n    \"label\": \"Sick\",\n    \"value\": \"sick\"\n  },\n  {\n    \"label\": \"Abused\",\n    \"value\": \"abused\"\n  },\n  {\n    \"label\": \"Abandoned\",\n    \"value\": \"abandoned\"\n  },\n  {\n    \"label\": \"Stray\",\n    \"value\": \"stray\"\n  },\n  {\n    \"label\": \"Pregnant\",\n    \"value\": \"pregnant\"\n  },\n  {\n    \"label\": \"Nursing\",\n    \"value\": \"nursing\"\n  },\n  {\n    \"label\": \"Behavioral Issues\",\n    \"value\": \"behavioral_issues\"\n  },\n  {\n    \"label\": \"Elderly\",\n    \"value\": \"elderly\"\n  }\n]",
+          "body": "[\n  \"healthy\",\n  \"injured\",\n  \"sick\",\n  \"abused\",\n  \"abandoned\",\n  \"stray\",\n  \"pregnant\",\n  \"nursing\",\n  \"behavioral_issues\",\n  \"elderly\"\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "c9cd7a8f-36e1-426b-9167-0c647276a8f6",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "animals/status",
+      "responses": [
+        {
+          "uuid": "d278d14d-7ead-4992-9e30-b314d5ca52b7",
+          "body": "[\r\n  \"adoptable\",\r\n  \"adopted\",\r\n  \"quarantine\",\r\n  \"fostered\",\r\n  \"dead\"\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "162133e1-5300-4d7b-aaaf-f528389efbf5",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "organization/roles",
+      "responses": [
+        {
+          "uuid": "fa05f5ef-497c-47f4-9cb4-0f4a3ca1284d",
+          "body": "[\n  \"adopter\",\n  \"staff\",\n  \"admin\",\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -169,6 +225,14 @@
     {
       "type": "route",
       "uuid": "94778b4e-dd70-4736-94bd-26cd1b20cfb0"
+    },
+    {
+      "type": "route",
+      "uuid": "c9cd7a8f-36e1-426b-9167-0c647276a8f6"
+    },
+    {
+      "type": "route",
+      "uuid": "162133e1-5300-4d7b-aaaf-f528389efbf5"
     }
   ],
   "proxyMode": false,
