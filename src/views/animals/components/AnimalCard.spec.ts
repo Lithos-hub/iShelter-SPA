@@ -1,12 +1,12 @@
 import { Animal } from '@/models';
-import ListCard from './ListCard.vue';
+import ListCard from './AnimalCard.vue';
 import { render } from '@testing-library/vue';
 
 const animal: Animal = {
 	id: 1,
 	gender: 'test-gender',
 	name: 'test-name',
-	status: 'test-status',
+	status: 'adoptable',
 	specie: 'test-specie',
 	breed: 'test-breed',
 	location: 'test-location',
@@ -35,7 +35,6 @@ describe('Component: ListCard', () => {
 	it('renders the prop data correctly', () => {
 		const { getByText } = getRender();
 		expect(getByText('test-name')).toBeTruthy();
-		expect(getByText('test-status')).toBeTruthy();
 		expect(getByText('test-breed')).toBeTruthy();
 	});
 });

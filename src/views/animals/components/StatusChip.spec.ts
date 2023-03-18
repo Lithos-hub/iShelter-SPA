@@ -1,8 +1,8 @@
 import StatusChip from './StatusChip.vue';
 import { render } from '@testing-library/vue';
+import { StatusType } from '@/models';
 
-// TODO: In the future it will be more animal status
-const getRender = (animalStatus: 'adopted' | 'adoptable' | 'quarantine') =>
+const getRender = (animalStatus: StatusType) =>
 	render(StatusChip, {
 		props: {
 			animalStatus,
@@ -14,16 +14,16 @@ describe('Component: StatusChip', () => {
 		const view = getRender('adopted');
 		expect(view).toBeTruthy();
 	});
-	it('renders the adoptable chip with bg-sky-300 color', () => {
+	it('renders the adoptable chip with emerald color', () => {
 		const { getByTestId } = getRender('adoptable');
 		expect(
-			getByTestId('status-chip').classList.contains('bg-sky-300')
+			getByTestId('status-chip').classList.contains('from-emerald-500')
 		).toBeTruthy();
 	});
-	it('renders the quarantine chip with bg-purple-300 color', () => {
+	it('renders the quarantine chip with purple color', () => {
 		const { getByTestId } = getRender('quarantine');
 		expect(
-			getByTestId('status-chip').classList.contains('bg-purple-300')
+			getByTestId('status-chip').classList.contains('from-purple-300')
 		).toBeTruthy();
 	});
 });

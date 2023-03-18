@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "3ea98459-4de4-41e3-b74d-f5afe624915d",
-          "body": "[\r\n  {\r\n    \"id\":1,\r\n    \"gender\":\"Male\",\r\n    \"name\":\"Max\",\r\n    \"status\":\"Adoptable\",\r\n    \"specie\":\"Dog\",\r\n    \"breed\":\"Golden Retriever\",\r\n    \"location\":\"Los Angeles\",\r\n    \"microchip\":\"123456789\",\r\n    \"weight\":70,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1627920000,\r\n    \"intake_condition\":\"Healthy\",\r\n    \"intake_date\":1643419200,\r\n    \"microchip_number\":\"ABC123\",\r\n    \"image\":\"https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80\"\r\n  },\r\n  {\r\n    \"id\":2,\r\n    \"gender\":\"Female\",\r\n    \"name\":\"Luna\",\r\n    \"status\":\"Adoptable\",\r\n    \"specie\":\"Dog\",\r\n    \"breed\":\"Labrador Retriever\",\r\n    \"location\":\"New York City\",\r\n    \"microchip\":\"234567890\",\r\n    \"weight\":60,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1630411200,\r\n    \"intake_condition\":\"Sick\",\r\n    \"intake_date\":1644086400,\r\n    \"image\":\"https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60\"\r\n  },\r\n  {\r\n    \"id\":3,\r\n    \"gender\":\"Male\",\r\n    \"name\":\"Simba\",\r\n    \"status\":\"Adoptable\",\r\n    \"specie\":\"Cat\",\r\n    \"breed\":\"Persian\",\r\n    \"location\":\"Chicago\",\r\n    \"microchip\":\"345678901\",\r\n    \"weight\":10,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1638345600,\r\n    \"intake_condition\":\"Injured\",\r\n    \"intake_date\":1644451200,\r\n    \"microchip_number\":\"XYZ789\",\r\n    \"image\":\"https://images.unsplash.com/photo-1506755855567-92ff770e8d00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhdCUyMHBlcnNpYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60\"\r\n  },\r\n  {\r\n    \"id\":4,\r\n    \"gender\":\"Female\",\r\n    \"name\":\"Molly\",\r\n    \"status\":\"Adopted\",\r\n    \"specie\":\"Dog\",\r\n    \"breed\":\"Chihuahua\",\r\n    \"location\":\"San Francisco\",\r\n    \"microchip\":\"456789012\",\r\n    \"weight\":5,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1618473600,\r\n    \"intake_condition\":\"Healthy\",\r\n    \"intake_date\":1644720000,\r\n    \"microchip_number\":\"DEF456\",\r\n    \"image\":\"https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n  },\r\n  {\r\n    \"id\":5,\r\n    \"gender\":\"Male\",\r\n    \"name\":\"Buddy\",\r\n    \"status\":\"Adoptable\",\r\n    \"specie\":\"Dog\",\r\n    \"breed\":\"Poodle\",\r\n    \"location\":\"Houston\",\r\n    \"microchip\":\"567890123\",\r\n    \"weight\":15,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1623350400,\r\n    \"intake_condition\":\"Abused\",\r\n    \"intake_date\":1644806400,\r\n    \"image\":\"https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80\"\r\n  },\r\n  {\r\n    \"id\":6,\r\n    \"gender\":\"Female\",\r\n    \"name\":\"Daisy\",\r\n    \"status\":\"Adoptable\",\r\n    \"specie\":\"Dog\",\r\n    \"breed\":\"Beagle\",\r\n    \"location\":\"Atlanta\",\r\n    \"microchip\":\"678901234\",\r\n    \"weight\":25,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1611072000,\r\n    \"intake_condition\":\"Pregnant\",\r\n    \"intake_date\":1644979200,\r\n    \"microchip_number\":\"GHI789\",\r\n    \"image\":\"https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80\"\r\n  },\r\n  {\r\n    \"id\":7,\r\n    \"gender\":\"Male\",\r\n    \"name\":\"Rocky\",\r\n    \"status\":\"adoptable\",\r\n    \"specie\":\"Dog\",\r\n    \"breed\":\"Bulldog\",\r\n    \"location\":\"Miami\",\r\n    \"microchip\":\"789012345\",\r\n    \"weight\":50,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1623456000,\r\n    \"intake_condition\":\"Healthy\",\r\n    \"intake_date\":1645065600,\r\n    \"microchip_number\":\"JKL123\",\r\n    \"image\":\"https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80\"\r\n  },\r\n  {\r\n    \"id\":8,\r\n    \"gender\":\"Female\",\r\n    \"name\":\"Coco\",\r\n    \"status\":\"Adoptable\",\r\n    \"specie\":\"Dog\",\r\n    \"breed\":\"Pomeranian\",\r\n    \"location\":\"Seattle\",\r\n    \"microchip\":\"890123456\",\r\n    \"weight\":8,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1633046400,\r\n    \"intake_condition\":\"Injured\",\r\n    \"intake_date\":1645152000,\r\n    \"image\":\"https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80\"\r\n  },\r\n  {\r\n    \"id\":9,\r\n    \"gender\":\"Male\",\r\n    \"name\":\"Toby\",\r\n    \"status\":\"Adopted\",\r\n    \"specie\":\"Cat\",\r\n    \"breed\":\"Siamese\",\r\n    \"location\":\"Denver\",\r\n    \"microchip\":\"901234567\",\r\n    \"weight\":12,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1617283200,\r\n    \"intake_condition\":\"Healthy\",\r\n    \"intake_date\":1645238400,\r\n    \"microchip_number\":\"MNO456\",\r\n    \"image\":\"https://images.unsplash.com/photo-1511044568932-338cba0ad803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n  },\r\n  {\r\n    \"id\":10,\r\n    \"gender\":\"Female\",\r\n    \"name\":\"Lucy\",\r\n    \"status\":\"Adoptable\",\r\n    \"specie\":\"Dog\",\r\n    \"breed\":\"Yorkshire Terrier\",\r\n    \"location\":\"Boston\",\r\n    \"microchip\":\"012345678\",\r\n    \"weight\":6,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1621051200,\r\n    \"intake_condition\":\"Abused\",\r\n    \"intake_date\":1645411200,\r\n    \"image\":\"https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n  },\r\n  {\r\n    \"id\":11,\r\n    \"gender\":\"Male\",\r\n    \"name\":\"Oscar\",\r\n    \"status\":\"Adoptable\",\r\n    \"specie\":\"Dog\",\r\n    \"breed\":\"German Shepherd\",\r\n    \"location\":\"Phoenix\",\r\n    \"microchip\":\"123456789\",\r\n    \"weight\":80,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1638220800,\r\n    \"intake_condition\":\"Sick\",\r\n    \"intake_date\":1645497600,\r\n    \"microchip_number\":\"PQR789\",\r\n    \"image\":\"https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80\"\r\n  },\r\n  {\r\n    \"id\":12,\r\n    \"gender\":\"Female\",\r\n    \"name\":\"Maggie\",\r\n    \"status\":\"Adoptable\",\r\n    \"specie\":\"Dog\",\r\n    \"breed\":\"Dalmatian\",\r\n    \"location\":\"Dallas\",\r\n    \"microchip\":\"234567890\",\r\n    \"weight\":40,\r\n    \"weight_type\":\"lbs\",\r\n    \"date_birth\":1625769600,\r\n    \"intake_condition\":\"Injured\",\r\n    \"intake_date\":1645584000,\r\n    \"microchip_number\":\"STU123\",\r\n    \"image\":\"https://images.unsplash.com/photo-1560807707-8cc77767d783?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80\"\r\n  }\r\n]",
+          "body": "[\n  {\n    \"id\":1,\n    \"gender\":\"Male\",\n    \"name\":\"Max\",\n    \"status\":\"adoptable\",\n    \"specie\":\"Dog\",\n    \"breed\":\"Golden Retriever\",\n    \"location\":\"Los Angeles\",\n    \"microchip\":\"123456789\",\n    \"weight\":70,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1358550171000,\n    \"intake_condition\":\"Healthy\",\n    \"intake_date\":1250373862000,\n    \"microchip_number\":\"ABC123\",\n    \"image\":\"https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80\"\n  },\n  {\n    \"id\":2,\n    \"gender\":\"Female\",\n    \"name\":\"Luna\",\n    \"status\":\"pending\",\n    \"specie\":\"Dog\",\n    \"breed\":\"Labrador Retriever\",\n    \"location\":\"New York City\",\n    \"microchip\":\"234567890\",\n    \"weight\":60,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1510672739000,\n    \"intake_condition\":\"Sick\",\n    \"intake_date\":1512525167000,\n    \"image\":\"https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60\"\n  },\n  {\n    \"id\":3,\n    \"gender\":\"Male\",\n    \"name\":\"Simba\",\n    \"status\":\"adopted\",\n    \"specie\":\"Cat\",\n    \"breed\":\"Persian\",\n    \"location\":\"Chicago\",\n    \"microchip\":\"345678901\",\n    \"weight\":10,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1410969191000,\n    \"intake_condition\":\"Injured\",\n    \"intake_date\":1583964106000,\n    \"microchip_number\":\"XYZ789\",\n    \"image\":\"https://images.unsplash.com/photo-1506755855567-92ff770e8d00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhdCUyMHBlcnNpYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60\"\n  },\n  {\n    \"id\":4,\n    \"gender\":\"Female\",\n    \"name\":\"Molly\",\n    \"status\":\"study\",\n    \"specie\":\"Dog\",\n    \"breed\":\"Chihuahua\",\n    \"location\":\"San Francisco\",\n    \"microchip\":\"456789012\",\n    \"weight\":5,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1392717009000,\n    \"intake_condition\":\"Healthy\",\n    \"intake_date\":1495534545000,\n    \"microchip_number\":\"DEF456\",\n    \"image\":\"https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\n  },\n  {\n    \"id\":5,\n    \"gender\":\"Male\",\n    \"name\":\"Buddy\",\n    \"status\":\"medical_treatment\",\n    \"specie\":\"Dog\",\n    \"breed\":\"Poodle\",\n    \"location\":\"Houston\",\n    \"microchip\":\"567890123\",\n    \"weight\":15,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1499320401000,\n    \"intake_condition\":\"Abused\",\n    \"intake_date\":1456302321000,\n    \"image\":\"https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80\"\n  },\n  {\n    \"id\":6,\n    \"gender\":\"Female\",\n    \"name\":\"Daisy\",\n    \"status\":\"quarantine\",\n    \"specie\":\"Dog\",\n    \"breed\":\"Beagle\",\n    \"location\":\"Atlanta\",\n    \"microchip\":\"678901234\",\n    \"weight\":25,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1628977322000,\n    \"intake_condition\":\"Pregnant\",\n    \"intake_date\":1277231742000,\n    \"microchip_number\":\"GHI789\",\n    \"image\":\"https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80\"\n  },\n  {\n    \"id\":7,\n    \"gender\":\"Male\",\n    \"name\":\"Rocky\",\n    \"status\":\"awaiting_spay\",\n    \"specie\":\"Dog\",\n    \"breed\":\"Bulldog\",\n    \"location\":\"Miami\",\n    \"microchip\":\"789012345\",\n    \"weight\":50,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1500780682000,\n    \"intake_condition\":\"Healthy\",\n    \"intake_date\":1481651503000,\n    \"microchip_number\":\"JKL123\",\n    \"image\":\"https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80\"\n  },\n  {\n    \"id\":8,\n    \"gender\":\"Female\",\n    \"name\":\"Coco\",\n    \"status\":\"recovering\",\n    \"specie\":\"Dog\",\n    \"breed\":\"Pomeranian\",\n    \"location\":\"Seattle\",\n    \"microchip\":\"890123456\",\n    \"weight\":8,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1490738967000,\n    \"intake_condition\":\"Injured\",\n    \"intake_date\":1369510338000,\n    \"image\":\"https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80\"\n  },\n  {\n    \"id\":9,\n    \"gender\":\"Male\",\n    \"name\":\"Toby\",\n    \"status\":\"training\",\n    \"specie\":\"Cat\",\n    \"breed\":\"Siamese\",\n    \"location\":\"Denver\",\n    \"microchip\":\"901234567\",\n    \"weight\":12,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1315807955000,\n    \"intake_condition\":\"Healthy\",\n    \"intake_date\":1627949929000,\n    \"microchip_number\":\"MNO456\",\n    \"image\":\"https://images.unsplash.com/photo-1511044568932-338cba0ad803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\n  },\n  {\n    \"id\":10,\n    \"gender\":\"Female\",\n    \"name\":\"Lucy\",\n    \"status\":\"observation\",\n    \"specie\":\"Dog\",\n    \"breed\":\"Yorkshire Terrier\",\n    \"location\":\"Boston\",\n    \"microchip\":\"012345678\",\n    \"weight\":6,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1487783329000,\n    \"intake_condition\":\"Abused\",\n    \"intake_date\":1559713411000,\n    \"image\":\"https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\n  },\n  {\n    \"id\":11,\n    \"gender\":\"Male\",\n    \"name\":\"Oscar\",\n    \"status\":\"temp_no_adoptable\",\n    \"specie\":\"Dog\",\n    \"breed\":\"German Shepherd\",\n    \"location\":\"Phoenix\",\n    \"microchip\":\"123456789\",\n    \"weight\":80,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1463237218000,\n    \"intake_condition\":\"Sick\",\n    \"intake_date\":1381782563000,\n    \"microchip_number\":\"PQR789\",\n    \"image\":\"https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80\"\n  },\n  {\n    \"id\":12,\n    \"gender\":\"Female\",\n    \"name\":\"Maggie\",\n    \"status\":\"study\",\n    \"specie\":\"Dog\",\n    \"breed\":\"Dalmatian\",\n    \"location\":\"Dallas\",\n    \"microchip\":\"234567890\",\n    \"weight\":40,\n    \"weight_type\":\"lbs\",\n    \"date_birth\":1612433202000,\n    \"intake_condition\":\"Injured\",\n    \"intake_date\":1351058804000,\n    \"microchip_number\":\"STU123\",\n    \"image\":\"https://images.unsplash.com/photo-1560807707-8cc77767d783?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -45,7 +45,7 @@
       "responses": [
         {
           "uuid": "82f45d40-778f-4d3e-ba49-4ae0222e1ebf",
-          "body": "[\n  {\n    \"id\": 1,\n    \"user_name\": \"John\",\n    \"user_lastname\": \"Doe\",\n    \"email\": \"johndoe@example.com\",\n    \"phone_first\": \"952 00 00 00\",\n    \"phone_second\": \"600 00 00 00\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen1137c03937fad3c64b6df4124a83b7a6.jpg\",\n    \"role\": \"staff\"\n  },\n  {\n    \"id\": 2,\n    \"user_name\": \"Jane\",\n    \"user_lastname\": \"Doe\",\n    \"email\": \"janedoe@example.com\",\n    \"phone_first\": \"952 00 00 00\",\n    \"phone_second\": \"600 00 00 00\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen11b5369598a4e9d67b87810dd4fddc13.jpg\",\n    \"role\": \"admin\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": 1,\n    \"user_name\": \"John\",\n    \"user_lastname\": \"Doe\",\n    \"email\": \"johndoe@example.com\",\n    \"phone_first\": \"952 00 00 00\",\n    \"phone_second\": \"600 00 00 00\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen1137c03937fad3c64b6df4124a83b7a6.jpg\",\n    \"role\": \"staff\"\n  },\n  {\n    \"id\": 2,\n    \"user_name\": \"Jane\",\n    \"user_lastname\": \"Doe\",\n    \"email\": \"janedoe@example.com\",\n    \"phone_first\": \"952 00 00 00\",\n    \"phone_second\": \"600 00 00 00\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen11b5369598a4e9d67b87810dd4fddc13.jpg\",\n    \"role\": \"admin\"\n  },\n  {\n    \"id\": 3,\n    \"user_name\": \"David\",\n    \"user_lastname\": \"Smith\",\n    \"email\": \"davidsmith@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen1183c35752d57207fc90f5fa2b3a06ec.jpg\",\n    \"role\": \"staff\"\n  },\n  {\n    \"id\": 4,\n    \"user_name\": \"Emma\",\n    \"user_lastname\": \"Lee\",\n    \"email\": \"emmalee@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen37391462bb9cee8f88265c75a0c21a14.jpg\",\n    \"role\": \"staff\"\n  },\n  {\n    \"id\": 5,\n    \"user_name\": \"William\",\n    \"user_lastname\": \"Brown\",\n    \"email\": \"williambrown@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen11536a3308d3984b563bf9876f284d37.jpg\",\n    \"role\": \"volunteer\"\n  },\n  {\n    \"id\": 6,\n    \"user_name\": \"Olivia\",\n    \"user_lastname\": \"Garcia\",\n    \"email\": \"oliviagarcia@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen115ae5538bec9a676849fb523b245500.jpg\",\n    \"role\": \"volunteer\"\n  },\n  {\n    \"id\": 7,\n    \"user_name\": \"Ethan\",\n    \"user_lastname\": \"Martinez\",\n    \"email\": \"ethanmartinez@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen1180c79ef4415695551b224310eacedb.jpg\",\n    \"role\": \"staff\"\n  },\n  {\n    \"id\": 8,\n    \"user_name\": \"Nat\",\n    \"user_lastname\": \"Hernandez\",\n    \"email\": \"averyhernandez@example.com\",\n    \"phone_first\": \"555 555 5555\",\n    \"phone_second\": \"555 555 5555\",\n    \"avatar\": \"https://this-person-does-not-exist.com/img/avatar-gen28977dbe94506203ac527aff92b99d95.jpg\",\n    \"role\": \"volunteer\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -129,7 +129,119 @@
       "responses": [
         {
           "uuid": "37cec62f-8193-4d9a-ba02-c3738737a628",
-          "body": "[\n  {\n    \"label\": \"Healthy\",\n    \"value\": \"healthy\"\n  },\n  {\n    \"label\": \"Injured\",\n    \"value\": \"injured\"\n  },\n  {\n    \"label\": \"Sick\",\n    \"value\": \"sick\"\n  },\n  {\n    \"label\": \"Abused\",\n    \"value\": \"abused\"\n  },\n  {\n    \"label\": \"Abandoned\",\n    \"value\": \"abandoned\"\n  },\n  {\n    \"label\": \"Stray\",\n    \"value\": \"stray\"\n  },\n  {\n    \"label\": \"Pregnant\",\n    \"value\": \"pregnant\"\n  },\n  {\n    \"label\": \"Nursing\",\n    \"value\": \"nursing\"\n  },\n  {\n    \"label\": \"Behavioral Issues\",\n    \"value\": \"behavioral_issues\"\n  },\n  {\n    \"label\": \"Elderly\",\n    \"value\": \"elderly\"\n  }\n]",
+          "body": "[\n  \"healthy\",\n  \"injured\",\n  \"sick\",\n  \"abused\",\n  \"abandoned\",\n  \"stray\",\n  \"pregnant\",\n  \"nursing\",\n  \"behavioral_issues\",\n  \"elderly\"\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "c9cd7a8f-36e1-426b-9167-0c647276a8f6",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "animals/status",
+      "responses": [
+        {
+          "uuid": "d278d14d-7ead-4992-9e30-b314d5ca52b7",
+          "body": "[\r\n  \"adoptable\",\r\n  \"adopted\",\r\n  \"quarantine\",\r\n  \"fostered\",\r\n  \"dead\"\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "162133e1-5300-4d7b-aaaf-f528389efbf5",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "users/roles",
+      "responses": [
+        {
+          "uuid": "fa05f5ef-497c-47f4-9cb4-0f4a3ca1284d",
+          "body": "[\n  \"staff\",\n  \"admin\",\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "18b0aff2-6a25-4948-885e-53dddb10058b",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "people",
+      "responses": [
+        {
+          "uuid": "0fc7769e-bea3-4728-9185-f10733f49a95",
+          "body": "[\n  {\n    \"id\": 1,\n    \"person_name\": \"María\",\n    \"person_lastname\": \"Pérez Martín\",\n    \"role\": \"potential_adopter\",\n    \"email\": \"dominio@ejemplo.com\",\n    \"date_birth\": 432070800000,\n    \"phone\": \"600 00 00 00\",\n    \"street_1\": \"Calle Remedios, 52\",\n    \"street_2\": \"Escalera 2, 5º A\",\n    \"city\": \"Málaga\",\n    \"zip_code\": \"29014\",\n    \"region\": \"Andalucía\"\n  },\n  {\n    \"id\": 2,\n    \"person_name\": \"Juan\",\n    \"person_lastname\": \"García López\",\n    \"role\": \"adopter\",\n    \"email\": \"juan.garcia@example.com\",\n    \"date_birth\": 363987600000,\n    \"phone\": \"611 11 11 11\",\n    \"street_1\": \"Avenida de la Libertad, 23\",\n    \"street_2\": \"\",\n    \"city\": \"Madrid\",\n    \"zip_code\": \"28010\",\n    \"region\": \"Madrid\"\n  },\n  {\n    \"id\": 3,\n    \"person_name\": \"Ana\",\n    \"person_lastname\": \"Martínez Ruiz\",\n    \"role\": \"senior_adopter\",\n    \"email\": \"ana.martinez@example.com\",\n    \"date_birth\": 340851600000,\n    \"phone\": \"622 22 22 22\",\n    \"street_1\": \"Calle Mayor, 15\",\n    \"street_2\": \"Bajo A\",\n    \"city\": \"Valencia\",\n    \"zip_code\": \"46001\",\n    \"region\": \"Valencia\"\n  },\n  {\n    \"id\": 4,\n    \"person_name\": \"David\",\n    \"person_lastname\": \"González Fernández\",\n    \"role\": \"foster\",\n    \"email\": \"david.gonzalez@example.com\",\n    \"date_birth\": 276105600000,\n    \"phone\": \"633 33 33 33\",\n    \"street_1\": \"Calle Granada, 8\",\n    \"street_2\": \"\",\n    \"city\": \"Granada\",\n    \"zip_code\": \"18010\",\n    \"region\": \"Andalucía\"\n  },\n  {\n    \"id\": 5,\n    \"person_name\": \"Marta\",\n    \"person_lastname\": \"Sánchez García\",\n    \"role\": \"short_term_foster\",\n    \"email\": \"marta.sanchez@example.com\",\n    \"date_birth\": 260121600000,\n    \"phone\": \"644 44 44 44\",\n    \"street_1\": \"Calle San Vicente, 14\",\n    \"street_2\": \"\",\n    \"city\": \"Sevilla\",\n    \"zip_code\": \"41001\",\n    \"region\": \"Andalucía\"\n  },\n  {\n    \"id\": 6,\n    \"person_name\": \"Carlos\",\n    \"person_lastname\": \"Fernández Pérez\",\n    \"role\": \"long_term_foster\",\n    \"email\": \"carlos.fernandez@example.com\",\n    \"date_birth\": 725235200000,\n    \"phone\": \"655 55 55 55\",\n    \"street_1\": \"Calle Aragón, 67\",\n    \"street_2\": \"\",\n    \"city\": \"Barcelona\",\n    \"zip_code\": \"08011\",\n    \"region\": \"Cataluña\"\n  },\n  {\n    \"id\": 7,\n    \"person_name\": \"Sofía\",\n    \"person_lastname\": \"López Rodríguez\",\n    \"role\": \"medical_foster\",\n    \"email\": \"sofia.lopez@example.com\",\n    \"date_birth\": 197996400000,\n    \"phone\": \"666 66 66 66\",\n    \"street_1\": \"Calle Mayor, 3\",\n    \"street_2\": \"\",\n    \"city\": \"Zaragoza\",\n    \"zip_code\": \"50001\",\n    \"region\": \"Aragón\"\n  },\n  {\n    \"id\": 8,\n    \"person_name\": \"Javier\",\n    \"person_lastname\": \"Gómez Martínez\",\n    \"role\": \"emergency_foster\",\n    \"email\": \"javier.gomez@example.com\",\n    \"date_birth\": 890396400000,\n    \"phone\": \"677 77 77 77\",\n    \"street_1\": \"Calle Alcalá, 34\",\n    \"street_2\": \"\",\n    \"city\": \"Madrid\",\n    \"zip_code\": \"28009\",\n    \"region\": \"Madrid\"\n  },\n  {\n    \"id\": 9,\n    \"person_name\": \"Lucía\",\n    \"person_lastname\": \"Díaz García\",\n    \"role\": \"dog_walker\",\n    \"email\": \"lucia.diaz@example.com\",\n    \"date_birth\": 823127200000,\n    \"phone\": \"688 88 88 88\",\n    \"street_1\": \"Calle Real, 17\",\n    \"street_2\": \"\",\n    \"city\": \"Toledo\",\n    \"zip_code\": \"45001\",\n    \"region\": \"Castilla-La Mancha\"\n  },\n  {\n    \"id\": 10,\n    \"person_name\": \"Pablo\",\n    \"person_lastname\": \"Santos Gutiérrez\",\n    \"role\": \"socializer\",\n    \"email\": \"pablo.santos@example.com\",\n    \"date_birth\": 179335200000,\n    \"phone\": \"699 99 99 99\",\n    \"street_1\": \"Calle Mayor, 10\",\n    \"street_2\": \"\",\n    \"city\": \"Valladolid\",\n    \"zip_code\": \"47001\",\n    \"region\": \"Castilla y León\"\n  },\n      {\n    \"id\": 21,\n    \"person_name\": \"Ana\",\n    \"person_lastname\": \"García Pérez\",\n    \"role\": \"socializer\",\n    \"email\": \"ana.garcia@example.com\",\n    \"date_birth\": 623127200000,\n    \"phone\": \"600 00 00 00\",\n    \"street_1\": \"Calle del Prado, 5\",\n    \"street_2\": \"1ºD\",\n    \"city\": \"Madrid\",\n    \"zip_code\": \"28014\",\n    \"region\": \"Comunidad de Madrid\"\n    },\n\n    {\n    \"id\": 42,\n    \"person_name\": \"Carla\",\n    \"person_lastname\": \"Jiménez Rodríguez\",\n    \"role\": \"fundraiser\",\n    \"email\": \"carla.jimenez@example.com\",\n    \"date_birth\": 823127200000,\n    \"phone\": \"633 33 33 33\",\n    \"street_1\": \"Avenida de la Constitución, 12\",\n    \"street_2\": \"\",\n    \"city\": \"Sevilla\",\n    \"zip_code\": \"41001\",\n    \"region\": \"Andalucía\"\n    },\n\n    {\n    \"id\": 73,\n    \"person_name\": \"Javier\",\n    \"person_lastname\": \"González García\",\n    \"role\": \"adoption_event_volunteer\",\n    \"email\": \"javier.gonzalez@example.com\",\n    \"date_birth\": 723127200000,\n    \"phone\": \"910 00 00 00\",\n    \"street_1\": \"Calle Génova, 6\",\n    \"street_2\": \"3ºC\",\n    \"city\": \"Madrid\",\n    \"zip_code\": \"28004\",\n    \"region\": \"Comunidad de Madrid\"\n    }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "36e864c3-090f-46d6-b4c1-b5846e76943e",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "people/roles",
+      "responses": [
+        {
+          "uuid": "0907b1bb-27e9-43fd-91dd-5bcf05568c4b",
+          "body": "{}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -156,7 +268,11 @@
     },
     {
       "type": "route",
-      "uuid": "10e1b00b-1639-4895-bfa9-9b9edb50b709"
+      "uuid": "94778b4e-dd70-4736-94bd-26cd1b20cfb0"
+    },
+    {
+      "type": "route",
+      "uuid": "c9cd7a8f-36e1-426b-9167-0c647276a8f6"
     },
     {
       "type": "route",
@@ -168,7 +284,19 @@
     },
     {
       "type": "route",
-      "uuid": "94778b4e-dd70-4736-94bd-26cd1b20cfb0"
+      "uuid": "18b0aff2-6a25-4948-885e-53dddb10058b"
+    },
+    {
+      "type": "route",
+      "uuid": "36e864c3-090f-46d6-b4c1-b5846e76943e"
+    },
+    {
+      "type": "route",
+      "uuid": "10e1b00b-1639-4895-bfa9-9b9edb50b709"
+    },
+    {
+      "type": "route",
+      "uuid": "162133e1-5300-4d7b-aaaf-f528389efbf5"
     }
   ],
   "proxyMode": false,

@@ -2,7 +2,7 @@
 	<section class="flex justify-between mb-5 items-center">
 		<h1 class="text-5xl font-bold text-secondary-1">Animales</h1>
 		<BaseButton
-			title="Añadir nuevo usuario"
+			title="Añadir nuevo animal"
 			rounded="pill"
 			size="large"
 			@click="dialog = !dialog" />
@@ -18,13 +18,23 @@
 	<section>
 		<Filters :is-loading="isLoading" />
 	</section>
+	<section class="mb-5">
+		<LegendStatus :legends="statusLegends" />
+	</section>
 	<section>
 		<BaseSpinner v-if="isLoading" />
-		<section v-else class="grid grid-cols-4 gap-10">
+		<section
+			v-else-if="animalsData?.data.length"
+			class="grid grid-cols-4 gap-10">
 			<ListCard
 				v-for="(animal, i) of animalsData?.data"
 				:key="i"
 				:data="animal" />
+		</section>
+		<section v-else>
+			<NoDataMessage
+				message="Aún no has añadido animales. 
+			Pulsa en 'Añadir nuevo animal' para empezar a registrar uno." />
 		</section>
 	</section>
 </template>
@@ -32,8 +42,10 @@
 <script setup lang="ts">
 import { useAnimalsQuery } from '@/services/apis';
 
-import ListCard from '@/views/animals/components/ListCard.vue';
+import ListCard from '@/views/animals/components/AnimalCard.vue';
 import Filters from './components/DataFilters.vue';
+import LegendStatus from './components/LegendStatus.vue';
+import { statusLegends } from '@/utils';
 
 const { data: animalsData, isLoading } = useAnimalsQuery();
 

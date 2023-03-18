@@ -18,6 +18,7 @@ declare module '@vue/runtime-core' {
     FormGenerator: typeof import('./src/components/FormGenerator.vue')['default']
     FullScreenDialog: typeof import('./src/components/FullScreenDialog.vue')['default']
     NavigationMenu: typeof import('./src/components/NavigationMenu.vue')['default']
+    NoDataMessage: typeof import('./src/components/NoDataMessage.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SearchInput: typeof import('./src/components/SearchInput.vue')['default']
@@ -41,11 +42,13 @@ declare module '@vue/runtime-core' {
     VListItemTitle: typeof import('vuetify/components')['VListItemTitle']
     VMain: typeof import('vuetify/components')['VMain']
     VMenu: typeof import('vuetify/components')['VMenu']
+    VNavigationDrawer: typeof import('vuetify/components')['VNavigationDrawer']
     VProgressCircular: typeof import('vuetify/components')['VProgressCircular']
     VSnackbar: typeof import('vuetify/components')['VSnackbar']
     VSpacer: typeof import('vuetify/components')['VSpacer']
     VTextField: typeof import('vuetify/components')['VTextField']
     VToolbar: typeof import('vuetify/components')['VToolbar']
     VToolbarTitle: typeof import('vuetify/components')['VToolbarTitle']
+    VTooltip: typeof import('vuetify/components')['VTooltip']
   }
 }

@@ -97,7 +97,7 @@
 </template>
 
 <script setup lang="ts">
-import { FormGeneratorInterface } from '@/models/FormGenerator.interface';
+import { FormGeneratorInterface } from '@/models';
 import { ref } from 'vue';
 import { useFormGeneratorStore } from '@/store/FormGenerator';
 

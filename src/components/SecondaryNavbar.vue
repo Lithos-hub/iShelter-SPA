@@ -1,141 +1,66 @@
 <template>
 	<v-app-bar density="compact" color="black" flat class="text-white">
-		<div class="flex gap-5 mx-auto">
+		<div v-if="width > 1350" class="flex gap-5 mx-auto">
 			<NavigationMenu
 				v-for="(item, i) of menuItems"
 				:key="i"
 				:menu-item="item" />
 		</div>
+		<div v-else class="flex gap-5 mx-auto">
+			<v-btn variant="text" icon="mdi-menu" @click="drawer = !drawer"></v-btn>
+		</div>
 	</v-app-bar>
+	<v-navigation-drawer
+		v-if="width < 1350"
+		v-model="drawer"
+		location="top"
+		class="bg-black h-auto"
+		temporary>
+		<ul
+			class="w-[75vw] grid grid-cols-3 mx-auto justify-center items-center py-5 bg-black">
+			<NavigationMenu
+				v-for="(item, i) of menuItems"
+				:key="i"
+				:menu-item="item" />
+		</ul>
+	</v-navigation-drawer>
 </template>
 
 <script lang="ts" setup>
+import { useDisplay } from 'vuetify';
+
+const { width } = useDisplay();
+
+const drawer = ref(false);
+
 const menuItems = [
 	{
 		title: 'Mi organización',
 		to: '/organization',
-		// items: [
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// ],
 	},
 	{
-		title: 'Calendario',
-		to: '/calendar',
-		// items: [
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// ],
+		title: 'Personas',
+		to: '/people',
 	},
 	{
 		title: 'Animales',
 		to: '/animals',
-		// items: [
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// ],
+	},
+	{
+		title: 'Calendario',
+		to: '/calendar',
 	},
 	{
 		title: 'Estadísticas',
 		to: '/stats',
-		// items: [
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// ],
 	},
 	{
 		title: 'Solicitudes',
 		to: '/applications',
-		// items: [
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// ],
 	},
 	{
 		title: 'Estado financiero',
 		to: '/financial',
-		// items: [
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// 	{
-		// 		text: 'Item 1',
-		// 		icon: 'mdi-star',
-		// 		to: '/loquesea',
-		// 	},
-		// ],
 	},
 ];
 </script>
