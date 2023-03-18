@@ -19,7 +19,7 @@
 		<Filters :is-loading="isLoading" />
 	</section>
 	<section class="mb-5">
-		<LegendStatus :legends="statusLegends" />
+		<HeaderLegends :legends="statusLegends" />
 	</section>
 	<section>
 		<BaseSpinner v-if="isLoading" />
@@ -44,7 +44,7 @@ import { useAnimalsQuery } from '@/services/apis';
 
 import ListCard from '@/views/animals/components/AnimalCard.vue';
 import Filters from './components/DataFilters.vue';
-import LegendStatus from './components/LegendStatus.vue';
+import HeaderLegends from './components/HeaderLegends.vue';
 import { statusLegends } from '@/utils';
 
 const { data: animalsData, isLoading } = useAnimalsQuery();

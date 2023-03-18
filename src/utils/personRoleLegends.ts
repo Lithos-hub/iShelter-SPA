@@ -1,75 +1,45 @@
-import { Legend, PersonRoleType } from '@/models';
+import { PersonRoleTooltip, PersonRoleType } from '@/models';
 
-export const personRoleLegends: Legend[] = [
+export const personRoleLegends: PersonRoleTooltip[] = [
 	{
-		name: 'adoptable',
+		name: 'potential_adopter',
 		description:
-			'El animal está listo para encontrar un hogar permanente y está disponible para ser adoptado por una familia.',
+			'Persona que ha expresado su interés en adoptar un animal pero que aún no ha completado el proceso de adopción.',
 	},
 	{
-		name: 'pending',
+		name: 'adopter',
 		description:
-			'El animal ya ha sido seleccionado para ser adoptado por una familia, pero aún no ha sido entregado a su nuevo hogar.',
+			'Persona que ha adoptado un animal del refugio y ha completado el proceso de adopción.',
 	},
 	{
-		name: 'adopted',
+		name: 'senior_adopter',
 		description:
-			'El animal ha encontrado un hogar permanente y ha sido adoptado por una familia.',
+			'Un adoptante que tiene más de cierta edad, generalmente 65 años o más, y puede ser elegible para programas especiales de adopción o descuentos.',
 	},
 	{
-		name: 'medical_treatment',
+		name: 'foster',
 		description:
-			'El animal está siendo tratado por una enfermedad o lesión y está en proceso de recuperación.',
+			'Persona que acoge temporalmente a un animal en su casa como acogedor, con la intención de adoptarlo si el periodo de acogida va bien.',
 	},
 	{
-		name: 'quarantine',
+		name: 'short_term_foster',
 		description:
-			'El animal está en cuarentena para evitar la propagación de enfermedades contagiosas.',
+			'Persona que acoge a un animal en su casa durante un breve periodo de tiempo, normalmente de unos días a unas semanas.',
 	},
 	{
-		name: 'awaiting_spay',
+		name: 'long_term_foster',
 		description:
-			'El animal está esperando ser castrado o esterilizado antes de ser adoptado.',
+			'Persona que acoge a un animal en su casa durante un periodo de tiempo más largo, normalmente varios meses o hasta que el animal es adoptado.',
 	},
 	{
-		name: 'training',
+		name: 'medical_foster',
 		description:
-			'El animal está recibiendo entrenamiento o adiestramiento para mejorar su comportamiento o habilidades.',
+			'Persona que acoge a un animal con necesidades médicas especiales que requieren cuidados y atención adicionales.',
 	},
 	{
-		name: 'recovering',
+		name: 'emergency_foster',
 		description:
-			'El animal está en proceso de recuperación después de una cirugía.',
-	},
-	{
-		name: 'observation',
-		description:
-			'El animal está siendo observado por su salud o comportamiento, para asegurarse de que esté sano y listo para ser adoptado.',
-	},
-	{
-		name: 'geriatrics_care',
-		description:
-			'El animal es anciano y necesita cuidados especiales y atención adicional.',
-	},
-	{
-		name: 'temp_no_adoptable',
-		description:
-			'El animal no está disponible para adopción en este momento, por alguna razón específica.',
-	},
-	{
-		name: 'in_transit',
-		description:
-			'El animal está siendo trasladado a otra protectora de animales o hogar.',
-	},
-	{
-		name: 'study',
-		description:
-			'El animal está siendo estudiado o investigado por su salud o comportamiento.',
-	},
-	{
-		name: 'deceased',
-		description:
-			'El animal ha fallecido en la protectora de animales, lo cual es siempre una pérdida triste para el personal y voluntarios de la protectora.',
+			'Persona que acoge a un animal con poca antelación debido a una emergencia repentina, como una catástrofe natural o una crisis familiar.',
 	},
 ];
 
@@ -79,14 +49,10 @@ export const getPersonRoleName = (name: PersonRoleType) => {
 		adopter: 'Adoptante',
 		senior_adopter: 'Adoptante Senior',
 		foster: 'Casa de acogida',
-		short_term_foster: 'Acogida a corto plazo',
-		long_term_foster: 'Acogida de larga duración',
-		medical_foster: 'Acogida médica',
-		emergency_foster: 'Acogida de emergencia',
-		dog_walker: 'Paseador de perros',
-		socializer: 'Socializador',
-		adoption_event_volunteer: 'Voluntario en eventos de adopción',
-		fundraiser: 'Recaudador de fondos',
+		short_term_foster: 'Acog. a corto plazo',
+		long_term_foster: 'Acog. de larga duración',
+		medical_foster: 'Acog. médica',
+		emergency_foster: 'Acog. de emergencia',
 	}[name];
 };
 
@@ -107,13 +73,5 @@ export const getPersonRoleColor = (name: PersonRoleType) => {
 			'bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold',
 		emergency_foster:
 			'bg-gradient-to-b from-orange-500 to-amber-500 text-white font-bold',
-		dog_walker:
-			'bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold',
-		socializer:
-			'bg-gradient-to-r from-amber-500 to-pink-500 text-white font-bold',
-		adoption_event_volunteer:
-			'bg-gradient-to-r from-pink-500 to-cyan-500 text-white font-bold',
-		fundraiser:
-			'bg-gradient-to-r from-slate-800 to-indigo-500 text-white font-bold',
 	}[name];
 };

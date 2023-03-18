@@ -45,13 +45,6 @@ const roleItems = [
 	{ label: 'Acogida de larga duración', value: 'long_term_foster' },
 	{ label: 'Acogida médica', value: 'medical_foster' },
 	{ label: 'Acogida de emergencia', value: 'emergency_foster' },
-	{ label: 'Paseador de perros', value: 'dog_walker' },
-	{ label: 'Socializador', value: 'socializer' },
-	{
-		label: 'Voluntario en eventos de adopción',
-		value: 'adoption_event_volunteer',
-	},
-	{ label: 'Recaudador de fondos', value: 'fundraiser' },
 ];
 
 const roles = ref([]);
