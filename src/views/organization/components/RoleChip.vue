@@ -1,6 +1,6 @@
 <template>
 	<div
-		data-testid="status-chip"
+		data-testid="role-chip"
 		class="py-1 px-5 w-auto text-center rounded-bl-xl"
 		:class="getUserRoleColor(userRole)">
 		<small class="text-xs mx-auto">{{ getUserRoleName(userRole) }}</small>

@@ -1,6 +1,6 @@
 import { UserRoleTooltip, UserRoleType } from '@/models';
 
-export const personRoleUserRoleTooltips: UserRoleTooltip[] = [
+export const userRoleLegends: UserRoleTooltip[] = [
 	{
 		name: 'admin',
 		description:
