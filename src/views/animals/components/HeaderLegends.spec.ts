@@ -1,8 +1,8 @@
-import LegendStatus from './LegendStatus.vue';
+import LegendStatus from './HeaderLegends.vue';
 import { render } from '@testing-library/vue';
-import { Legend } from '@/models';
+import { AnimalStatusTooltip } from '@/models';
 
-const legends: Legend[] = [
+const legends: AnimalStatusTooltip[] = [
 	{
 		name: 'adoptable',
 		description: 'test 1',

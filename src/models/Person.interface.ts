@@ -13,7 +13,7 @@ export interface Person {
 	region: string;
 }
 
-export interface Role {
+export interface PersonRoleTooltip {
 	name: PersonRoleType;
 	description: string;
 }
@@ -26,8 +26,4 @@ export type PersonRoleType =
 	| 'short_term_foster'
 	| 'long_term_foster'
 	| 'medical_foster'
-	| 'emergency_foster'
-	| 'dog_walker'
-	| 'socializer'
-	| 'adoption_event_volunteer'
-	| 'fundraiser';
+	| 'emergency_foster';

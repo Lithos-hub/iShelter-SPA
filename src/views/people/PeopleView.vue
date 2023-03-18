@@ -18,6 +18,9 @@
 	<section>
 		<DataFilters :is-loading="isLoading" />
 	</section>
+	<section class="mb-5">
+		<HeaderLegends :legends="personRoleLegends" />
+	</section>
 	<section>
 		<base-spinner v-if="isLoading" />
 		<section
@@ -38,8 +41,12 @@
 
 <script lang="ts" setup>
 import DataFilters from './components/DataFilters.vue';
+import HeaderLegends from './components/HeaderLegends.vue';
 import PeopleCard from './components/PeopleCard.vue';
+
 import { usePeopleQuery } from '@/services/apis/people';
+
+import { personRoleLegends } from '@/utils';
 
 const { data: peopleData, isLoading } = usePeopleQuery();
 

@@ -1,12 +1,12 @@
 <template>
-	<ul class="grid grid-cols-7 gap-1">
+	<ul class="grid grid-cols-8 gap-1">
 		<div
 			v-for="({ name, description }, i) of legends"
 			:key="i"
 			class="text-center rounded-full p-2"
-			:class="getStatusColor(name)">
+			:class="getPersonRoleColor(name)">
 			<div class="text-center" data-testid="legend-status">
-				<small class="text-xs">{{ getStatusName(name) }}</small>
+				<small class="text-xs">{{ getPersonRoleName(name) }}</small>
 			</div>
 			<v-tooltip
 				content-class="!bg-primary-1 !max-w-[250px] font-bold text-center"
@@ -19,11 +19,11 @@
 </template>
 
 <script setup lang="ts">
-import { Legend } from '@/models';
-import { getStatusName, getStatusColor } from '@/utils';
+import { getPersonRoleColor, getPersonRoleName } from '@/utils';
+import { PersonRoleTooltip } from '@/models';
 
 interface Props {
-	legends: Legend[];
+	legends: PersonRoleTooltip[];
 }
 
 defineProps<Props>();

@@ -16,7 +16,7 @@ export interface Animal {
 	image?: string;
 }
 
-export interface Legend {
+export interface AnimalStatusTooltip {
 	name: StatusType;
 	description: string;
 }

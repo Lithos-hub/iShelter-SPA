@@ -1,2 +1,3 @@
 export * from './personRoleLegends';
-export * from './statusLegends';
+export * from './animalStatusLegends';
+export * from './userRoleLegends';

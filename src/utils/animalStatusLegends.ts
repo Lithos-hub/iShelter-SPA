@@ -1,6 +1,6 @@
-import { Legend, StatusType } from '@/models';
+import { AnimalStatusTooltip, StatusType } from '@/models';
 
-export const statusLegends: Legend[] = [
+export const statusLegends: AnimalStatusTooltip[] = [
 	{
 		name: 'adoptable',
 		description:
@@ -73,7 +73,7 @@ export const statusLegends: Legend[] = [
 	},
 ];
 
-export const getStatusName = (name: StatusType) => {
+export const getAnimalStatusName = (name: StatusType) => {
 	return {
 		adoptable: 'Disponible',
 		pending: 'Pendiente',
@@ -92,7 +92,7 @@ export const getStatusName = (name: StatusType) => {
 	}[name];
 };
 
-export const getStatusColor = (name: StatusType) => {
+export const getAnimalStatusColor = (name: StatusType) => {
 	return {
 		adoptable:
 			'text-white bg-gradient-to-r from-emerald-500 to-[#3BB2B8] font-bold',
