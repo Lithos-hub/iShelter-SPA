@@ -18,6 +18,9 @@
 	<section>
 		<DataFilters :is-loading="isLoading" />
 	</section>
+	<section class="mb-5">
+		<HeaderLegends :legends="userRoleLegends" />
+	</section>
 	<section>
 		<base-spinner v-if="isLoading" />
 		<section v-else-if="usersData?.data.length" class="grid grid-cols-4 gap-10">
@@ -32,9 +35,13 @@
 </template>
 
 <script lang="ts" setup>
-import { useUsersQuery } from '../../services/apis/users';
 import DataFilters from './components/DataFilters.vue';
-import ListCard from './components/ListCard.vue';
+import HeaderLegends from './components/HeaderLegends.vue';
+import ListCard from './components/UserCard.vue';
+
+import { useUsersQuery } from '@/services/apis/users';
+
+import { userRoleLegends } from '@/utils';
 
 const { data: usersData, isLoading } = useUsersQuery();
 

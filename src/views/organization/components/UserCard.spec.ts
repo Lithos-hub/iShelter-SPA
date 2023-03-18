@@ -1,5 +1,5 @@
 import { User } from '@/models';
-import ListCard from './ListCard.vue';
+import ListCard from './UserCard.vue';
 import { render } from '@testing-library/vue';
 
 const user: User = {
@@ -11,7 +11,7 @@ const user: User = {
 	phone_second: '600 00 00 00',
 	avatar:
 		'https://this-person-does-not-exist.com/img/avatar-gen1137c03937fad3c64b6df4124a83b7a6.jpg',
-	role: 'staff',
+	role: 'admin',
 };
 
 const getRender = () =>
