@@ -23,6 +23,14 @@ const routes = [
 					),
 			},
 			{
+				path: '/people',
+				name: 'People',
+				component: () =>
+					import(
+						/* webpackChunkName: "home" */ '@/views/people/PeopleView.vue'
+					),
+			},
+			{
 				path: '/calendar',
 				name: 'Calendar',
 				component: () =>

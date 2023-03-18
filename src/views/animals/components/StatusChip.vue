@@ -1,27 +1,19 @@
 <template>
 	<div
 		data-testid="status-chip"
-		class="p-2 text-center rounded-bl-xl"
-		:class="statusColor()">
-		<p class="text-sm mx-auto">{{ animalStatus }}</p>
+		class="py-1 px-5 w-auto text-center rounded-bl-xl"
+		:class="getStatusColor(animalStatus)">
+		<small class="text-xs mx-auto">{{ getStatusName(animalStatus) }}</small>
 	</div>
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
-	animalStatus: string;
+import { StatusType } from '@/models';
+import { getStatusName, getStatusColor } from '@/utils/statusLegends';
+
+defineProps<{
+	animalStatus: StatusType;
 }>();
-
-const statusColor = () => {
-	const options = {
-		adopted: 'text-green-700 bg-emerald-300 font-bold border border-green-500',
-		adoptable: 'text-blue-700 bg-sky-300 font-bold border border-blue-500',
-		quarantine:
-			'text-indigo-700 bg-purple-300 font-bold border border-indigo-500',
-	};
-
-	return options[props.animalStatus.toLowerCase() as keyof typeof options];
-};
 </script>
 
 <style scoped></style>

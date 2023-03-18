@@ -1,10 +1,14 @@
 <template>
 	<CardLayout class="hover:scale-105 duration-200" data-testid="ListCard">
-		<v-card class="mx-auto rounded-xl border" max-width="400" elevation="0">
+		<v-card class="mx-auto rounded-xl" max-width="400" elevation="0">
 			<v-img class="align-end text-white" height="225" :src="data.image" cover>
-				<v-card-title class="bg-primary-1 bg-opacity-80">{{
-					data.name
-				}}</v-card-title>
+				<v-card-title class="bg-primary-1 bg-opacity-80">
+					<div class="flex justify-between">
+						<div>{{ data.name }}</div>
+						<div>{{ age }}</div>
+					</div>
+				</v-card-title>
+
 				<StatusChip
 					class="absolute top-0 right-0 w-[100px]"
 					:animal-status="data.status" />
@@ -32,9 +36,12 @@
 import { Animal } from '@/models';
 import SpecieEmoji from './SpecieEmoji.vue';
 import StatusChip from './StatusChip.vue';
+import { useDateTransformer } from '@/composables';
 
 interface Props {
 	data: Animal;
 }
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const age = useDateTransformer(props.data.date_birth);
 </script>
