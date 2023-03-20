@@ -1,7 +1,7 @@
 import { useQuery } from 'vue-query';
 import { Api } from '@/services/config';
 import { Animal } from '@/models';
-import { useSnackbarStore } from '@/store/snackbar';
+import { useSnackbarStore } from '@/store';
 // import { useErrorHandle } from '../utils';
 // import { AxiosError } from 'axios';
 

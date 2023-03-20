@@ -38,6 +38,15 @@ export const getUserRoleName = (name: UserRoleType) => {
 	}[name];
 };
 
+export const getUserRoleList = () => {
+	return userRoleLegends.map(({ name }) => {
+		return {
+			label: getUserRoleName(name),
+			value: name,
+		};
+	});
+};
+
 export const getUserRoleColor = (name: UserRoleType) => {
 	return {
 		admin: 'bg-gradient-to-r from-blue-900 to-blue-500 text-white font-bold',

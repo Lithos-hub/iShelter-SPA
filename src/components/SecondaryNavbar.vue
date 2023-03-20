@@ -21,6 +21,7 @@
 			<NavigationMenu
 				v-for="(item, i) of menuItems"
 				:key="i"
+				class="mx-auto"
 				:menu-item="item" />
 		</ul>
 	</v-navigation-drawer>

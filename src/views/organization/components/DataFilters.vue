@@ -3,7 +3,7 @@
 		<div class="flex-auto">
 			<SearchInput :is-loading="isLoading" label="Buscar usuario" />
 		</div>
-		<div class="flex-none w-[200px]" data-testid="data-filters">
+		<div class="flex-none w-1/3" data-testid="data-filters">
 			<v-autocomplete
 				v-model="select"
 				clearable
@@ -11,6 +11,8 @@
 				color="primary"
 				label="Rol"
 				:items="roleItems"
+				item-title="label"
+				item-value="value"
 				multiple
 				menu-icon="mdi-chevron-down" />
 		</div>
@@ -18,7 +20,9 @@
 </template>
 
 <script setup lang="ts">
-const roleItems = ['admin', 'staff'];
+import { getUserRoleList } from '@/utils';
+
+const roleItems = computed(() => getUserRoleList());
 
 const select = ref([]);
 

@@ -4,7 +4,7 @@
 	<v-form ref="generatorRef" class="grid grid-cols-12 gap-5" v-bind="$attrs">
 		<div
 			v-for="(
-				{ colStart, colEnd, renderElement, name, rules, ...rest }, i
+				{ colStart, colEnd, renderElement, name, rules, items, ...rest }, i
 			) of components"
 			:key="i"
 			:style="{ 'grid-column-start': colStart, 'grid-column-end': colEnd }">
@@ -30,6 +30,9 @@
 				:required="rules"
 				:rules="rules || []"
 				:name="name"
+				:items="items as readonly unknown[] || []"
+				item-title="label"
+				item-value="value"
 				v-bind="rest" />
 
 			<v-autocomplete
@@ -38,6 +41,8 @@
 				:required="rules"
 				:rules="rules || []"
 				:name="name"
+				item-title="label"
+				item-value="value"
 				v-bind="rest" />
 
 			<v-checkbox
@@ -92,6 +97,11 @@
 				:rules="rules || []"
 				:name="name"
 				v-bind="rest" />
+
+			<DragDropInput
+				v-if="renderElement === 'dragdropinput'"
+				:label="rest.label!"
+				@select="(data) => vModelForm[name as keyof typeof vModelForm] = data" />
 		</div>
 	</v-form>
 </template>
@@ -99,7 +109,7 @@
 <script setup lang="ts">
 import { FormGeneratorInterface } from '@/models';
 import { ref } from 'vue';
-import { useFormGeneratorStore } from '@/store/FormGenerator';
+import { useFormGeneratorStore } from '@/@/store';
 
 interface Props {
 	components: FormGeneratorInterface[];
