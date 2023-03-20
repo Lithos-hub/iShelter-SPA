@@ -109,7 +109,7 @@
 <script setup lang="ts">
 import { FormGeneratorInterface } from '@/models';
 import { ref } from 'vue';
-import { useFormGeneratorStore } from '@/store/FormGenerator';
+import { useFormGeneratorStore } from '@/@/store';
 
 interface Props {
 	components: FormGeneratorInterface[];

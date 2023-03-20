@@ -1,6 +1,6 @@
 // Utilities
 import { defineStore } from 'pinia';
-import { UserStoreState } from './interfaces/User';
+import { UserStoreState } from './interfaces';
 
 export const useUserStore = defineStore('user', {
 	state: (): UserStoreState => ({
@@ -16,3 +16,5 @@ export const useUserStore = defineStore('user', {
 		},
 	},
 });
+
+//

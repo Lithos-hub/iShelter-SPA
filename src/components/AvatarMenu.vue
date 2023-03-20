@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { useUserStore } from '@/store/User.js';
+import { useUserStore } from '@/store';
 
 const { user } = useUserStore();
 </script>
