@@ -47,7 +47,7 @@ import { useUsersQuery } from '@/services/apis/users';
 import { getUserRoleList, userRoleLegends } from '@/utils';
 import { checkEmail } from '@/utils/useExpReg';
 
-import { useFormGeneratorStore } from '@/@/store';
+import { useFormGeneratorStore } from '@/store';
 import { useSnackbarStore } from '@/store';
 
 const { data: usersData, isLoading } = useUsersQuery();
