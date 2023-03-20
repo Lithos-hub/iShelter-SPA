@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
-import { useSnackbarStore } from '../store/snackbar';
+import { useSnackbarStore } from '../store/Snackbar';
 
 const { display, type, message } = storeToRefs(useSnackbarStore());
 

@@ -4,8 +4,8 @@ export interface User {
 	user_lastname: string;
 	email: string;
 	phone_first: string;
-	role: UserRoleType;
 	phone_second?: string;
+	role: UserRoleType;
 	avatar: string;
 }
 

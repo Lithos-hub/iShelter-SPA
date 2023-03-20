@@ -1,5 +1,5 @@
-import { useSnackbarStore } from '@/store/snackbar';
-import { useUserStore } from '@/store/user';
+import { useSnackbarStore } from '@/store/Snackbar';
+import { useUserStore } from '@/store/User';
 import { AxiosError, AxiosResponse, InternalAxiosRequestConfig } from 'axios';
 // import { useErrorHandle } from '../utils';
 

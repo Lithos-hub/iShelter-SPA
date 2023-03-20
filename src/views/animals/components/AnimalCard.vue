@@ -1,7 +1,11 @@
 <template>
 	<CardLayout class="hover:scale-105 duration-200" data-testid="ListCard">
 		<v-card class="mx-auto rounded-xl" max-width="400" elevation="0">
-			<v-img class="align-end text-white" height="250" :src="data.image" cover>
+			<v-img
+				class="align-end text-white"
+				height="250"
+				:src="data.image || '/img/no-photo.png'"
+				cover>
 				<v-card-title class="bg-primary-1 bg-opacity-80">
 					<div class="flex justify-between">
 						<div>{{ data.name }}</div>

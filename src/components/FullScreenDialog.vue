@@ -8,9 +8,9 @@
 			<v-toolbar dark color="primary">
 				<v-toolbar-title>{{ title }}</v-toolbar-title>
 				<v-spacer></v-spacer>
-				<v-btn icon dark @click="$emit('minimize')">
+				<!-- <v-btn icon dark @click="$emit('minimize')">
 					<v-icon>mdi-window-minimize</v-icon>
-				</v-btn>
+				</v-btn> -->
 				<v-btn icon dark @click="$emit('close')">
 					<v-icon>mdi-close</v-icon>
 				</v-btn>
@@ -20,7 +20,8 @@
 				title="Guardar"
 				size="large"
 				rounded="pill"
-				class="ml-auto mt-auto m-5" />
+				class="ml-auto mt-auto m-5"
+				@click="$emit('submit')" />
 		</v-card>
 	</v-dialog>
 </template>
@@ -33,7 +34,7 @@ const props = defineProps<{
 	title: string;
 }>();
 
-defineEmits(['close', 'minimize']);
+defineEmits(['close', 'minimize', 'submit']);
 
 const dialog = ref(false);
 
@@ -42,5 +43,3 @@ watch(
 	(value) => (dialog.value = value)
 );
 </script>
-
-<style scoped></style>

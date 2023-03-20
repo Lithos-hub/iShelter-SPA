@@ -42,7 +42,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useUserStore } from '@/store/user';
+import { useUserStore } from '@/store/User.js';
 import LandingCard from '@/views/landing/components/LandingCard.vue';
 
 import { ref } from 'vue';

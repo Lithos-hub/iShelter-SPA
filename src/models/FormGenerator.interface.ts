@@ -15,7 +15,8 @@ type ComponentToRender =
 	| 'radiobutton'
 	| 'slider'
 	| 'range-slider'
-	| 'switch';
+	| 'switch'
+	| 'dragdropinput';
 
 export interface FormGeneratorInterface {
 	/* REQUIRED */ renderElement: ComponentToRender;
@@ -28,10 +29,13 @@ export interface FormGeneratorInterface {
 		| string[]
 		| number[]
 		| object[]
+		| []
+		| object
 		| boolean
 		| undefined;
+	placeholder?: string;
 	class?: string;
-	items?: Array<unknown>;
+	items?: Array<SelectItem> | ComputedRef<SelectItem[]>;
 	rules?: ValidationRule[];
 	label?: string;
 	reverse?: boolean;
@@ -55,3 +59,8 @@ export interface FormGeneratorInterface {
 	persistentPlaceholder?: boolean;
 	persistentCounter?: boolean;
 }
+
+export type SelectItem = {
+	label: string;
+	value: string | number;
+};
