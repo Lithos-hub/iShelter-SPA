@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import { getAnimalStatusName, getAnimalStatusColor } from '@/utils';
-import { AnimalStatusTooltip } from '../../../models/Animal.interface';
+import { AnimalStatusTooltip } from '@/models/Animal.interface';
 
 interface Props {
 	legends: AnimalStatusTooltip[];

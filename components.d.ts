@@ -16,8 +16,6 @@ declare module '@vue/runtime-core' {
     BaseSpinner: typeof import('./src/components/BaseSpinner.vue')['default']
     CardLayout: typeof import('./src/components/CardLayout.vue')['default']
     DragDropInput: typeof import('./src/components/DragDropInput.vue')['default']
-    DragInput: typeof import('./src/components/DragInput.vue')['default']
-    FileInput: typeof import('./src/components/FileInput.vue')['default']
     FormGenerator: typeof import('./src/components/FormGenerator.vue')['default']
     FullScreenDialog: typeof import('./src/components/FullScreenDialog.vue')['default']
     NavigationMenu: typeof import('./src/components/NavigationMenu.vue')['default']

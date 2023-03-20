@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import { useSnackbarStore } from '../store/Snackbar';
+import { useSnackbarStore } from '@/store/Snackbar';
 
 interface HTMLInputEvent extends Event {
 	target: HTMLInputElement & EventTarget;

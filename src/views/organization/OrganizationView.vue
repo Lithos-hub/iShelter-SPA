@@ -45,10 +45,10 @@ import { FormGeneratorInterface } from '@/models';
 import { useUsersQuery } from '@/services/apis/users';
 
 import { getUserRoleList, userRoleLegends } from '@/utils';
-import { checkEmail } from '../../utils/useExpReg';
+import { checkEmail } from '@/utils/useExpReg';
 
-import { useFormGeneratorStore } from '../../store/FormGenerator';
-import { useSnackbarStore } from '../../store/Snackbar';
+import { useFormGeneratorStore } from '@/store/FormGenerator';
+import { useSnackbarStore } from '@/store/Snackbar';
 
 const { data: usersData, isLoading } = useUsersQuery();
 const { vModelForm } = storeToRefs(useFormGeneratorStore());
