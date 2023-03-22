@@ -1,9 +1,9 @@
 <template>
 	<div
 		data-testid="role-chip"
-		class="py-1 px-5 w-auto text-center rounded-bl-xl"
+		class="py-2 px-5 text-center rounded-t-xl"
 		:class="getUserRoleColor(userRole)">
-		<small class="text-xs mx-auto">{{ getUserRoleName(userRole) }}</small>
+		<small class="mx-auto">{{ getUserRoleName(userRole) }}</small>
 	</div>
 </template>
 

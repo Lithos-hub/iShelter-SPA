@@ -49,14 +49,10 @@ export const getUserRoleList = () => {
 
 export const getUserRoleColor = (name: UserRoleType) => {
 	return {
-		admin: 'bg-gradient-to-r from-blue-900 to-blue-500 text-white font-bold',
-		staff_dog_walker:
-			'bg-gradient-to-r from-green-600 to-emerald-500 text-white font-bold',
-		staff_socializer:
-			'bg-gradient-to-r from-purple-900 to-indigo-400 text-white font-bold',
-		staff_adoption_event_volunteer:
-			'bg-gradient-to-r from-sky-700 to-blue-500 text-white font-bold',
-		staff_fundraiser:
-			'bg-gradient-to-r from-cyan-500 to-pink-600 text-white font-bold',
+		admin: 'bg-[#264653] text-white font-bold',
+		staff_dog_walker: 'bg-[#2a9d8f] text-white font-bold',
+		staff_socializer: 'bg-[#e9c46a] text-white font-bold',
+		staff_adoption_event_volunteer: 'bg-[#f4a261] text-white font-bold',
+		staff_fundraiser: 'bg-[#e76f51] text-white font-bold',
 	}[name];
 };

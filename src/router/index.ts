@@ -31,6 +31,14 @@ const routes = [
 					),
 			},
 			{
+				path: '/people/:id',
+				name: 'Person details',
+				component: () =>
+					import(
+						/* webpackChunkName: "home" */ '@/views/people/DetailsView.vue'
+					),
+			},
+			{
 				path: '/calendar',
 				name: 'Calendar',
 				component: () =>
@@ -44,6 +52,14 @@ const routes = [
 				component: () =>
 					import(
 						/* webpackChunkName: "home" */ '@/views/animals/AnimalsView.vue'
+					),
+			},
+			{
+				path: '/animals/:id',
+				name: 'Animal details',
+				component: () =>
+					import(
+						/* webpackChunkName: "home" */ '@/views/animals/DetailsView.vue'
 					),
 			},
 			{

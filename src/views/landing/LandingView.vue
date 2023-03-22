@@ -18,7 +18,7 @@
 				</v-card>
 			</CardLayout>
 		</div>
-		<div class="flex justify-center">
+		<div class="flex justify-center mx-auto">
 			<CardLayout>
 				<v-btn-toggle
 					v-model="filter"

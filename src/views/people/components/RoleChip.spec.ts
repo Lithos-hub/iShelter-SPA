@@ -17,13 +17,13 @@ describe('Component: RoleChip', () => {
 	it('renders the adoptable chip with bg-sky-300 color', () => {
 		const { getByTestId } = getRender('potential_adopter');
 		expect(
-			getByTestId('role-chip').classList.contains('from-blue-900')
+			getByTestId('role-chip').classList.contains('bg-[#577590]')
 		).toBeTruthy();
 	});
 	it('renders the quarantine chip with bg-purple-300 color', () => {
 		const { getByTestId } = getRender('senior_adopter');
 		expect(
-			getByTestId('role-chip').classList.contains('from-purple-900')
+			getByTestId('role-chip').classList.contains('bg-[#6a4c93]')
 		).toBeTruthy();
 	});
 });
