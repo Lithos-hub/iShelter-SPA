@@ -15,17 +15,14 @@
 			</div>
 		</FullScreenDialog>
 	</section>
-	<section>
-		<Filters :is-loading="isLoading" />
-	</section>
 	<section class="mb-5">
-		<HeaderLegends :legends="statusLegends" />
+		<Filters :is-loading="isLoading" />
 	</section>
 	<section>
 		<BaseSpinner v-if="isLoading" />
 		<section
 			v-else-if="animalsData?.data.length"
-			class="grid grid-cols-4 gap-10">
+			class="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-4 gap-10">
 			<ListCard
 				v-for="(animal, i) of animalsData?.data"
 				:key="i"
@@ -44,8 +41,6 @@ import { useAnimalsQuery } from '@/services/apis';
 
 import ListCard from '@/views/animals/components/AnimalCard.vue';
 import Filters from './components/DataFilters.vue';
-import HeaderLegends from './components/HeaderLegends.vue';
-import { statusLegends } from '@/utils';
 
 const { data: animalsData, isLoading } = useAnimalsQuery();
 

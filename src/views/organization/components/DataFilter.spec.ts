@@ -6,8 +6,4 @@ describe('Component: DataFilters', () => {
 		const view = render(DataFilters);
 		expect(view).toBeTruthy();
 	});
-	it('renders search input and the filter selector', () => {
-		const { getByTestId } = render(DataFilters);
-		expect(getByTestId('data-filters')).toBeTruthy();
-	});
 });

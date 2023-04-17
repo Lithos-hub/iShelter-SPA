@@ -16,15 +16,14 @@
 			</div>
 		</FullScreenDialog>
 	</section>
-	<section>
-		<DataFilters :is-loading="isLoading" />
-	</section>
 	<section class="mb-5">
-		<HeaderLegends :legends="userRoleLegends" />
+		<DataFilters :is-loading="isLoading" />
 	</section>
 	<section>
 		<base-spinner v-if="isLoading" />
-		<section v-else-if="usersData?.data.length" class="grid grid-cols-4 gap-10">
+		<section
+			v-else-if="usersData?.data.length"
+			class="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-4 gap-10">
 			<ListCard v-for="(user, i) of usersData?.data" :key="i" :data="user" />
 		</section>
 		<section v-else>
@@ -37,15 +36,14 @@
 
 <script lang="ts" setup>
 import DataFilters from './components/DataFilters.vue';
-import HeaderLegends from './components/HeaderLegends.vue';
 import ListCard from './components/UserCard.vue';
 
 import { FormGeneratorInterface } from '@/models';
 
 import { useUsersQuery } from '@/services/apis/users';
 
-import { getUserRoleList, userRoleLegends } from '@/utils';
-import { checkEmail } from '@/utils/useExpReg';
+import { getUserRoleList } from '@/utils';
+import { checkEmail } from '@/utils/expReg';
 
 import { useFormGeneratorStore } from '@/store';
 import { useSnackbarStore } from '@/store';

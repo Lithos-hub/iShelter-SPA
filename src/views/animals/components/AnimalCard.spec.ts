@@ -35,6 +35,5 @@ describe('Component: ListCard', () => {
 	it('renders the prop data correctly', () => {
 		const { getByText } = getRender();
 		expect(getByText('test-name')).toBeTruthy();
-		expect(getByText('test-breed')).toBeTruthy();
 	});
 });

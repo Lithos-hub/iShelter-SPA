@@ -17,13 +17,13 @@ describe('Component: StatusChip', () => {
 	it('renders the adoptable chip with emerald color', () => {
 		const { getByTestId } = getRender('adoptable');
 		expect(
-			getByTestId('status-chip').classList.contains('from-emerald-500')
+			getByTestId('status-chip').classList.contains('bg-[#43aa8b]')
 		).toBeTruthy();
 	});
 	it('renders the quarantine chip with purple color', () => {
 		const { getByTestId } = getRender('quarantine');
 		expect(
-			getByTestId('status-chip').classList.contains('from-purple-300')
+			getByTestId('status-chip').classList.contains('bg-[#9d4edd]')
 		).toBeTruthy();
 	});
 });

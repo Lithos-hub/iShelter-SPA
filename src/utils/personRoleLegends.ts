@@ -58,20 +58,13 @@ export const getPersonRoleName = (name: PersonRoleType) => {
 
 export const getPersonRoleColor = (name: PersonRoleType) => {
 	return {
-		potential_adopter:
-			'bg-gradient-to-r from-blue-900 to-blue-500 text-white font-bold',
-		adopter:
-			'bg-gradient-to-r from-green-600 to-emerald-500 text-white font-bold',
-		senior_adopter:
-			'bg-gradient-to-r from-purple-900 to-indigo-400 text-white font-bold',
-		foster: 'bg-gradient-to-r from-sky-700 to-blue-500 text-white font-bold',
-		short_term_foster:
-			'bg-gradient-to-r from-cyan-500 to-pink-600 text-white font-bold',
-		long_term_foster:
-			'bg-gradient-to-r from-red-500 to-pink-500 text-white font-bold',
-		medical_foster:
-			'bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold',
-		emergency_foster:
-			'bg-gradient-to-b from-orange-500 to-amber-500 text-white font-bold',
+		potential_adopter: 'bg-[#577590] text-white font-bold',
+		adopter: 'bg-[#43aa8b] text-white font-bold',
+		senior_adopter: 'bg-[#6a4c93] text-white font-bold',
+		foster: 'bg-[#8f2d56] text-white font-bold',
+		short_term_foster: 'bg-[#0fa3b1] text-white font-bold',
+		long_term_foster: 'bg-[#463f3a] text-white font-bold',
+		medical_foster: 'bg-[#f94144] text-white font-bold',
+		emergency_foster: 'bg-[#fe7f2d] text-white font-bold',
 	}[name];
 };

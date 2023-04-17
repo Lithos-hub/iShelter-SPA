@@ -36,24 +36,16 @@
 				multiple
 				menu-icon="mdi-chevron-down" />
 		</div>
-		<div class="flex-none w-[200px]">
-			<v-autocomplete
-				v-model="select"
-				clearable
-				chips
-				color="primary"
-				label="Estado"
-				:items="statusItems"
-				multiple
-				menu-icon="mdi-chevron-down" />
-		</div>
 	</div>
+	<HeaderLegends :legends="statusLegends" />
 </template>
 
 <script setup lang="ts">
+import HeaderLegends from './HeaderLegends.vue';
+import { statusLegends } from '@/utils';
+
 const specieItems = ['Perros', 'Gatos'];
 const breedItems = ['raza 1', 'raza 2', 'raza 3', 'raza 4'];
-const statusItems = ['estado 1', 'estado 2', 'estado 3', 'estado 4'];
 const genderItems = ['male', 'female'];
 
 const select = ref([]);

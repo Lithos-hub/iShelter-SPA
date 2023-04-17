@@ -15,17 +15,14 @@
 			</div>
 		</FullScreenDialog>
 	</section>
-	<section>
-		<DataFilters :is-loading="isLoading" />
-	</section>
 	<section class="mb-5">
-		<HeaderLegends :legends="personRoleLegends" />
+		<DataFilters :is-loading="isLoading" />
 	</section>
 	<section>
 		<base-spinner v-if="isLoading" />
 		<section
 			v-else-if="peopleData?.data.length"
-			class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+			class="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-4 gap-10">
 			<PeopleCard
 				v-for="(person, i) of peopleData?.data"
 				:key="i"
@@ -41,12 +38,9 @@
 
 <script lang="ts" setup>
 import DataFilters from './components/DataFilters.vue';
-import HeaderLegends from './components/HeaderLegends.vue';
 import PeopleCard from './components/PeopleCard.vue';
 
 import { usePeopleQuery } from '@/services/apis/people';
-
-import { personRoleLegends } from '@/utils';
 
 const { data: peopleData, isLoading } = usePeopleQuery();
 

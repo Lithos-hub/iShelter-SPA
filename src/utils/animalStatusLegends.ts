@@ -68,14 +68,13 @@ export const statusLegends: AnimalStatusTooltip[] = [
 	},
 	{
 		name: 'deceased',
-		description:
-			'El animal ha fallecido en la protectora de animales, lo cual es siempre una pérdida triste para el personal y voluntarios de la protectora.',
+		description: 'El animal ha cruzado el arcoiris.',
 	},
 ];
 
 export const getAnimalStatusName = (name: StatusType) => {
 	return {
-		adoptable: 'Disponible',
+		adoptable: 'En adopción',
 		pending: 'Pendiente',
 		adopted: 'Adoptado',
 		medical_treatment: 'En tratamiento',
@@ -88,37 +87,25 @@ export const getAnimalStatusName = (name: StatusType) => {
 		temp_no_adoptable: 'No adoptable',
 		in_transit: 'En tránsito',
 		study: 'En estudio',
-		deceased: 'Fallecido',
+		deceased: '',
 	}[name];
 };
 
 export const getAnimalStatusColor = (name: StatusType) => {
 	return {
-		adoptable:
-			'text-white bg-gradient-to-r from-emerald-500 to-[#3BB2B8] font-bold',
-		pending:
-			'text-white bg-gradient-to-br from-[#FCE38A] to-[#F38181] font-bold',
-		adopted:
-			'text-white bg-gradient-to-br from-[#17EAD9] to-[#6078EA] font-bold',
-		medical_treatment:
-			'text-white bg-gradient-to-b from-rose-500 to-[#FF7676] font-bold',
-		quarantine:
-			'text-white bg-gradient-to-br from-purple-300 to-indigo-900 font-bold',
-		awaiting_spay:
-			'text-white bg-gradient-to-br from-pink-200 to-rose-500 font-bold',
-		training:
-			'text-white bg-gradient-to-r from-[#5B247A] to-[#1BCEDF] font-bold',
-		recovering:
-			'text-white bg-gradient-to-br from-[#F02FC2] to-[#6094EA] font-bold',
-		observation:
-			'text-white bg-gradient-to-l from-[#F40076] to-orange-500 font-bold',
-		geriatrics_care:
-			'text-white bg-gradient-to-br from-indigo-500 to-rose-200 font-bold',
-		temp_no_adoptable:
-			'text-white bg-gradient-to-br from-gray-500 to-slate-900 font-bold',
-		in_transit:
-			'text-white bg-gradient-to-br from-sky-500 to-blue-900 font-bold',
-		study: 'text-white bg-gradient-to-r from-[#FA7CBB] to-orange-500 font-bold',
-		deceased: 'text-white bg-gradient-to-br from-black to-slate-900 font-bold',
+		adoptable: 'text-white bg-[#43aa8b] font-bold',
+		pending: 'text-white bg-[#f7b538] font-bold',
+		adopted: 'text-white bg-[#07beb8] font-bold',
+		medical_treatment: 'text-white bg-[#ff85a1] font-bold',
+		quarantine: 'text-white bg-[#9d4edd] font-bold',
+		awaiting_spay: 'text-white bg-[#8e9aaf] font-bold',
+		training: 'text-white bg-[#89023e] font-bold',
+		recovering: 'text-white bg-[#89c2d9] font-bold',
+		observation: 'text-white bg-[#d69f7e] font-bold',
+		geriatrics_care: 'text-white bg-[#ff477e] font-bold',
+		temp_no_adoptable: 'text-white bg-[#f94144] font-bold',
+		in_transit: 'text-white bg-[#014f86] font-bold',
+		study: 'text-white bg-[#774936] font-bold',
+		deceased: 'text-black rainbow font-bold',
 	}[name];
 };
