@@ -3,11 +3,14 @@
 		<v-card class="rounded-xl border" max-width="500" elevation="0">
 			<RouterLink :to="`/organization/${data.id}`">
 				<v-img
-					class="align-end text-white"
-					height="350"
-					:src="data.avatar || '/img/no-photo.png'"
-					cover>
-					<v-card-title class="bg-primary-1 bg-opacity-80 backdrop-blur-sm">
+					class="align-end"
+					width="auto"
+					height="250"
+					aspect-ratio="1/1"
+					cover
+					:src="data.avatar || '/img/no-photo.png'">
+					<v-card-title
+						class="bg-primary-1 bg-opacity-50 backdrop-blur-sm text-white">
 						<div class="font-bold">
 							{{ fullName }}
 						</div>
@@ -23,11 +26,11 @@
 					<div class="text-xl">
 						<div class="flex gap-3 items-center text-primary-1 font-bold">
 							<v-icon size="22" icon="mdi-at" />
-							<small>{{ data.email }}</small>
+							<small class="text-sm">{{ data.email }}</small>
 						</div>
 						<div class="flex gap-3 items-center text-black">
 							<v-icon size="22" icon="mdi-phone" />
-							<span>{{ data.phone_first }}</span>
+							<small class="text-sm">{{ data.phone_first }}</small>
 						</div>
 					</div>
 

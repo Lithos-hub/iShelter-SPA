@@ -4,7 +4,7 @@
 			<BaseNavbar />
 			<SecondaryNavbar />
 			<v-main class="min-h-screen bg-slate-100">
-				<div class="my-10 mx-[15vw]">
+				<div class="my-5 mx-[10vw]">
 					<router-view />
 				</div>
 			</v-main>

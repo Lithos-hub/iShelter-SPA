@@ -22,7 +22,7 @@
 		<BaseSpinner v-if="isLoading" />
 		<section
 			v-else-if="animalsData?.data.length"
-			class="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-3 gap-10">
+			class="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-4 gap-10">
 			<ListCard
 				v-for="(animal, i) of animalsData?.data"
 				:key="i"

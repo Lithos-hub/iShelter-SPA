@@ -1,17 +1,17 @@
 <template>
 	<CardLayout class="hover:scale-105 duration-200" data-testid="ListCard">
 		<v-card class="mx-auto rounded-xl" max-width="500" elevation="0">
+			<RoleChip class="relative w-full" :person-role="data.role" />
 			<RouterLink :to="`/animals/${data.id}`">
 				<v-img
-					class="align-end text-white mt-15 mb-5"
-					height="150"
+					class="align-end"
+					width="auto"
+					height="200"
+					aspect-ratio="1/1"
 					:src="`/img/${data.role}.png`">
 				</v-img>
-				<RoleChip
-					class="absolute top-0 right-0 w-full"
-					:person-role="data.role" />
 				<v-card-title
-					class="bg-primary-1 bg-opacity-80 backdrop-blur-sm text-white">
+					class="bg-primary-1 bg-opacity-75 backdrop-blur-sm text-white">
 					<div class="flex justify-between text-sm font-bold">
 						<div>{{ fullName }}</div>
 						<div>{{ age }}</div>

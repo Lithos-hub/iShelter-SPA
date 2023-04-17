@@ -22,7 +22,7 @@
 		<base-spinner v-if="isLoading" />
 		<section
 			v-else-if="peopleData?.data.length"
-			class="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-3 gap-10">
+			class="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-4 gap-10">
 			<PeopleCard
 				v-for="(person, i) of peopleData?.data"
 				:key="i"

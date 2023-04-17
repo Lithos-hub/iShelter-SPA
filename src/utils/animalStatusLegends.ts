@@ -74,7 +74,7 @@ export const statusLegends: AnimalStatusTooltip[] = [
 
 export const getAnimalStatusName = (name: StatusType) => {
 	return {
-		adoptable: 'Disponible',
+		adoptable: 'En adopción',
 		pending: 'Pendiente',
 		adopted: 'Adoptado',
 		medical_treatment: 'En tratamiento',

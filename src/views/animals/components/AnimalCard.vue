@@ -1,22 +1,22 @@
 <template>
 	<CardLayout class="hover:scale-105 duration-200" data-testid="ListCard">
 		<v-card class="mx-auto rounded-xl" elevation="0">
+			<StatusChip class="relative w-full" :animal-status="data.status" />
 			<RouterLink :to="`/animals/${data.id}`">
 				<v-img
-					class="align-end text-white"
-					height="350"
-					:src="data.image || '/img/no-photo.png'"
-					cover>
-					<v-card-title class="bg-primary-1 bg-opacity-80 backdrop-blur-sm">
+					class="align-end"
+					width="auto"
+					height="250"
+					aspect-ratio="1/1"
+					cover
+					:src="data.image || '/img/no-photo.png'">
+					<v-card-title
+						class="bg-primary-1 bg-opacity-50 backdrop-blur-sm text-white">
 						<div class="flex justify-between font-bold">
 							<div>{{ data.name }} <SpecieEmoji :specie="data.specie" /></div>
 							<div>{{ age }}</div>
 						</div>
 					</v-card-title>
-
-					<StatusChip
-						class="absolute top-0 right-0 w-full"
-						:animal-status="data.status" />
 				</v-img>
 			</RouterLink>
 
