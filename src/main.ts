@@ -10,6 +10,10 @@ const pinia = createPinia();
 
 import '@/scss/index.scss';
 
+// VCalendar
+import VCalendar from 'v-calendar';
+import 'v-calendar/style.css';
+
 // Vuetify
 
 import 'vuetify/styles';
@@ -84,4 +88,5 @@ createApp(App)
 	.use(pinia)
 	.use(vuetify)
 	.use(router)
+	.use(VCalendar, {})
 	.mount('#app');

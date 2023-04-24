@@ -1,0 +1,101 @@
+.vc-bordered,
+.vc-container .vc-monthly .vc-primary .vc-light .vc-expanded .vc-bordered {
+	@apply shadow-2xl;
+	border: none !important;
+	border-radius: 30px !important;
+}
+
+.vc-title span {
+	@apply text-primary-1 font-bold capitalize;
+}
+
+.vc-header .vc-arrow {
+	--vc-header-arrow-color: #fc4b6c !important;
+}
+
+.vc-day {
+	@apply shadow-xl rounded-2xl m-1 border-b-2 border-r border-gray-400/50 text-2xl relative h-24;
+
+	& .vc-primary {
+		@apply bg-secondary-1/50 w-full h-full rounded-none;
+	}
+
+	& .vc-day-content {
+		@apply text-secondary-1 rounded-none rounded-tl-2xl rounded-br-2xl absolute top-0 left-0 w-12 h-12 ml-auto hover:bg-primary-1/90 hover:text-white duration-200;
+	}
+	& .vc-highlight-content-solid {
+		@apply text-white;
+	}
+	& .vc-day-layer {
+		@apply rounded-2xl;
+	}
+}
+
+.vc-dots {
+	@apply max-h-[20px] overflow-hidden w-[90%];
+	flex-wrap: wrap;
+}
+
+.vc-light.vc-attr,
+.vc-light .vc-attr {
+	--vc-highlight-solid-bg: transparent !important;
+}
+
+.is-not-in-month {
+	@apply bg-slate-200;
+}
+
+.vc-dots {
+	& .vc-dot {
+		@apply h-4 w-4 rounded-full mb-2;
+	}
+}
+
+.vc-gray {
+	--vc-accent-600: #6b7280;
+}
+.vc-blue {
+	--vc-accent-600: #3b82f6;
+}
+.vc-indigo {
+	--vc-accent-600: #6366f1;
+}
+.vc-purple {
+	--vc-accent-600: #8b5cf6;
+}
+.vc-pink {
+	--vc-accent-600: #ec4899;
+}
+.vc-red {
+	--vc-accent-600: #ef4444;
+}
+.vc-orange {
+	--vc-accent-600: #f59e0b;
+}
+.vc-yellow {
+	--vc-accent-600: #fcd34d;
+}
+.vc-green {
+	--vc-accent-600: #10b981;
+}
+.vc-teal {
+	--vc-accent-600: #14b8a6;
+}
+.vc-cyan {
+	--vc-accent-600: #22d3ee;
+}
+.vc-sky {
+	--vc-accent-600: #0ab3f5;
+}
+.vc-lime {
+	--vc-accent-600: #84cc16;
+}
+.vc-amber {
+	--vc-accent-600: #f59e0b;
+}
+.vc-fuchsia {
+	--vc-accent-600: #d946ef;
+}
+.vc-rose {
+	--vc-accent-600: #ef4444;
+}
