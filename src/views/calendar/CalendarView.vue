@@ -85,6 +85,7 @@ import { FormGeneratorInterface } from '../../models/FormGenerator.interface';
 import { useFormGeneratorStore } from '@/store';
 
 interface CalendarEvent {
+	id: number;
 	description: string;
 	title: string;
 	dot: string;
@@ -147,7 +148,7 @@ const events = ref<CalendarEvent[]>([
 	},
 ]);
 
-const componentsList: FormGeneratorInterface[] = ref([
+const componentsList = ref<FormGeneratorInterface[]>([
 	{
 		renderElement: 'textfield',
 		name: 'title',
@@ -175,8 +176,14 @@ watch(date, () => {
 	});
 });
 
-const onSelectEventColor = (color) => (selectedColor.value = color);
-const onSelectEvent = ({ title, description }) => {
+const onSelectEventColor = (color: string) => (selectedColor.value = color);
+const onSelectEvent = ({
+	title,
+	description,
+}: {
+	title: string;
+	description: string;
+}) => {
 	setVModelForm({
 		title,
 		description,
@@ -184,6 +191,7 @@ const onSelectEvent = ({ title, description }) => {
 };
 const onDeleteCalendarEvent = (id: number) => {
 	// TODO:
+	console.log(id);
 	// Delete event and refresh
 };
 const selectedDateEvents = computed(() =>
