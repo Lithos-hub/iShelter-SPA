@@ -28,16 +28,11 @@ export const CURRENT_ADOPTIONS_DATA = {
 };
 
 export const CURRENT_GENERAL_DATA = {
-	labels: [
-		'Adopciones',
-		'Casas de acogida',
-		'Nuevas entradas',
-		'Fallecimientos',
-	],
+	labels: ['Adopciones', 'Casas de acogida', 'Nuevas entradas', 'Fallecimientos'],
 	datasets: [
 		{
 			backgroundColor: ['#22c55e', '#f97316', '#3b82f6', '#64748b'],
-			data: [10, 20, 80, 10],
+			data: [490, 20, 80, 10],
 		},
 	],
 };
@@ -85,16 +80,11 @@ export const LAST_ADOPTIONS_DATA = {
 };
 
 export const LAST_GENERAL_DATA = {
-	labels: [
-		'Adopciones',
-		'Casas de acogida',
-		'Nuevas entradas',
-		'Fallecimientos',
-	],
+	labels: ['Adopciones', 'Casas de acogida', 'Nuevas entradas', 'Fallecimientos'],
 	datasets: [
 		{
 			backgroundColor: ['#22c55e', '#f97316', '#3b82f6', '#64748b'],
-			data: [7, 17, 8, 4],
+			data: [327, 17, 8, 4],
 		},
 	],
 };
@@ -126,3 +116,87 @@ export const LAST_ORGANIZATION_DATA = {
 		},
 	],
 };
+
+// const prompt = `
+
+// Datos de adopciones (2022):
+
+// Enero: 23
+// Febrero: 93
+// Marzo: 12
+// Abril: 38
+// Mayo: 12
+// Junio: 93
+// Julio: 64
+// Agosto: 27
+// Septiembre: 11
+// Octubre: 23
+// Noviembre: 18
+// Diciembre: 23
+
+// Datos de adopciones (2023):
+
+// Enero: 112
+// Febrero: 39
+// Marzo: 50
+// Abril: 70
+// Mayo: 99
+// Junio: 80
+// Julio: 40
+
+// Datos de organización (2022):
+
+// Administradores: 1
+// Paseadores de perros: 12
+// Socializadores: 82
+// Voluntarios en eventos de adopción: 32
+// Recaudadores de fondos: 4
+
+// Datos de organización (2023):
+
+// Administradores: 2
+// Paseadores de perros: 23
+// Socializadores: 17
+// Voluntarios en eventos de adopción: 7
+// Recaudadores de fondos: 3
+
+// Datos de solicitudes de adopción (2022):
+
+// Enero: 98
+// Febrero: 111
+// Marzo: 82
+// Abril: 321
+// Mayo: 233
+// Junio: 23
+// Julio: 47
+// Agosto: 28
+// Septiembre: 39
+// Octubre: 322
+// Noviembre: 122
+// Diciembre: 132
+
+// Datos de solicitudes de adopción (2023):
+
+// Enero: 123
+// Febrero: 10
+// Marzo: 93
+// Abril: 131
+// Mayo: 54
+// Junio: 12
+// Julio: 22
+
+// Datos generales (2022):
+
+// Adopciones: 327
+// Casas de acogida: 17
+// Nuevas entradas: 8
+// Fallecimientos: 4
+
+// Datos generales (2023):
+
+// Adopciones: 490
+// Casas de acogida: 20
+// Nuevas entradas: 80
+// Fallecimientos: 10
+
+// `;
