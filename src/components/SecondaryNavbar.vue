@@ -1,10 +1,7 @@
 <template>
 	<v-app-bar density="compact" color="black" flat class="text-white">
-		<div v-if="width > 1350" class="flex gap-5 mx-auto">
-			<NavigationMenu
-				v-for="(item, i) of menuItems"
-				:key="i"
-				:menu-item="item" />
+		<div v-if="width > 1350" class="flex mx-auto">
+			<NavigationMenu v-for="(item, i) of menuItems" :key="i" :menu-item="item" />
 		</div>
 		<div v-else class="flex gap-5 mx-auto">
 			<v-btn variant="text" icon="mdi-menu" @click="drawer = !drawer"></v-btn>
@@ -16,13 +13,8 @@
 		location="top"
 		class="bg-black h-auto"
 		temporary>
-		<ul
-			class="w-[75vw] grid grid-cols-3 mx-auto justify-center items-center py-5 bg-black">
-			<NavigationMenu
-				v-for="(item, i) of menuItems"
-				:key="i"
-				class="mx-auto"
-				:menu-item="item" />
+		<ul class="w-[75vw] grid grid-cols-3 mx-auto justify-center items-center py-5 bg-black">
+			<NavigationMenu v-for="(item, i) of menuItems" :key="i" class="mx-auto" :menu-item="item" />
 		</ul>
 	</v-navigation-drawer>
 </template>
@@ -46,6 +38,10 @@ const menuItems = [
 	{
 		title: 'Animales',
 		to: '/animals',
+	},
+	{
+		title: 'Seguimiento',
+		to: '/follow-up',
 	},
 	{
 		title: 'Calendario',
