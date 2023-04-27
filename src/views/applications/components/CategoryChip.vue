@@ -1,5 +1,6 @@
 <template>
 	<div
+		data-testid="category-chip"
 		class="absolute left-0 top-0 text-xl text-white py-2 min-w-[170px] text-center rounded-br-[30px] flex flex-col justify-center items-center"
 		:class="getApplicationCategoryColor(category)">
 		<div>{{ getApplicationCategoryName(category) }}</div>
@@ -14,7 +15,5 @@ interface Props {
 	category: ApplicationCategory;
 }
 
-const props = defineProps<Props>();
+defineProps<Props>();
 </script>
-
-<style scoped></style>
