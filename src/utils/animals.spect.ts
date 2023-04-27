@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getAnimalStatusName } from './animalStatusLegends';
+import { getAnimalStatusName } from './animals';
 import { StatusType } from '@/models';
 
 describe('getAnimalStatusName_function', () => {
@@ -10,9 +10,7 @@ describe('getAnimalStatusName_function', () => {
 		expect(getAnimalStatusName('adopted')).toBe('Adoptado');
 		expect(getAnimalStatusName('medical_treatment')).toBe('En tratamiento');
 		expect(getAnimalStatusName('quarantine')).toBe('En cuarentena');
-		expect(getAnimalStatusName('awaiting_spay')).toBe(
-			'Castración/Esterilización'
-		);
+		expect(getAnimalStatusName('awaiting_spay')).toBe('Castración/Esterilización');
 		expect(getAnimalStatusName('training')).toBe('En entrenamiento');
 		expect(getAnimalStatusName('recovering')).toBe('En recuperación');
 		expect(getAnimalStatusName('observation')).toBe('En observación');
@@ -25,9 +23,7 @@ describe('getAnimalStatusName_function', () => {
 
 	// Tests that passing an invalid status type returns undefined.
 	it('test_edge_case: should return undefined when passing an invalid status type', () => {
-		expect(
-			getAnimalStatusName('invalid_status_type' as StatusType)
-		).toBeUndefined();
+		expect(getAnimalStatusName('invalid_status_type' as StatusType)).toBeUndefined();
 	});
 
 	// Tests that the function returns the correct name for a specific status type.

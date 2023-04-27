@@ -259,6 +259,34 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "e7d0b950-e813-4ec9-a2c4-f09c7112ac6e",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "applications",
+      "responses": [
+        {
+          "uuid": "014eb5a0-ae42-419d-b1d4-fe02d55ffc30",
+          "body": "[\n  {\n    \"id\": 1,\n    \"status\": \"new\",\n    \"fullname\": \"John Doe\",\n    \"email\": \"example@example.com\",\n    \"category\": \"adopter\",\n    \"phone\": \"952 00 00 00\",\n    \"message\": \"Hola! Quiero adoptar a un perrito\"\n  },\n  {\n    \"id\": 2,\n    \"status\": \"read\",\n    \"fullname\": \"Jane Doe\",\n    \"email\": \"example@example.com\",\n    \"category\": \"volunteer\",\n    \"phone\": \"952 00 00 00\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -297,6 +325,10 @@
     {
       "type": "route",
       "uuid": "162133e1-5300-4d7b-aaaf-f528389efbf5"
+    },
+    {
+      "type": "route",
+      "uuid": "e7d0b950-e813-4ec9-a2c4-f09c7112ac6e"
     }
   ],
   "proxyMode": false,
