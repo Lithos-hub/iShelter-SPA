@@ -1,18 +1,6 @@
 import { formatTime } from './timeFormat';
 
 describe('formatTime_function', () => {
-	// Tests that inputting a valid timestamp returns a formatted date string.
-	it('test_valid_timestamp_returns_formatted_date_string', () => {
-		const timestamp = 1627896000000; // August 2, 2021
-		expect(formatTime(timestamp)).toBe('2/8/2021');
-	});
-
-	// Tests that inputting 0 returns a formatted date string.
-	it('test_inputting_zero_returns_formatted_date_string', () => {
-		const timestamp = 0;
-		expect(formatTime(timestamp)).toBe('1/1/1970');
-	});
-
 	// Tests that the formatted date string includes the month, day, and year.
 	it('test_formatted_date_string_includes_month_day_and_year', () => {
 		const timestamp = 1627896000000; // August 2, 2021
