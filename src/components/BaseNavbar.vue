@@ -1,15 +1,13 @@
 <template>
 	<v-app-bar density="compact" color="primary" flat class="text-white px-10">
-		<router-link to="/" class="w-[110px] relative">
-			<v-img
-				src="/logo.png"
-				max-height="50"
-				max-width="110"
-				contain
-				class="bg-white p-2 rounded-xl" />
-			<small class="absolute -bottom-[2px] left-8 text-[10px] ml-2 text-black"
-				>Beta</small
-			>
+		<router-link
+			to="/"
+			class="w-auto relative flex px-4 py-1 bg-white rounded-full hover:scale-105 duration-200">
+			<v-img src="/logo-v2.png" height="30" width="30" cover aspect-ratio="1/1" />
+			<div class="flex flex-col pl-2">
+				<small class="text-primary-1">iShelter</small>
+				<small class="text-[10px] text-black">Beta</small>
+			</div>
 		</router-link>
 
 		<v-spacer></v-spacer>
