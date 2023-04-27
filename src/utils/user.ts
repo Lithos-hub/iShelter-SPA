@@ -3,13 +3,11 @@ import { UserRoleTooltip, UserRoleType } from '@/models';
 export const userRoleLegends: UserRoleTooltip[] = [
 	{
 		name: 'admin',
-		description:
-			'Persona encargada de gestionar la organización mediante iShelter.',
+		description: 'Persona encargada de gestionar la organización mediante iShelter.',
 	},
 	{
 		name: 'staff_dog_walker',
-		description:
-			'Voluntario que pasea perros y les proporciona ejercicio y socialización.',
+		description: 'Voluntario que pasea perros y les proporciona ejercicio y socialización.',
 	},
 	{
 		name: 'staff_socializer',

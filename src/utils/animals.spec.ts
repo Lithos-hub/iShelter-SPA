@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { getAnimalStatusName } from './animals';
 import { StatusType } from '@/models';
 
-describe('getAnimalStatusName_function', () => {
+describe('utils - animals', () => {
 	// Tests that each valid status type returns the corresponding name.
 	it('test_happy_path: should return the correct name for each valid status type', () => {
 		expect(getAnimalStatusName('adoptable')).toBe('En adopción');
