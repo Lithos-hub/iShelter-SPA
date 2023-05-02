@@ -29,7 +29,6 @@ declare module '@vue/runtime-core' {
     VApp: typeof import('vuetify/components')['VApp']
     VAppBar: typeof import('vuetify/components')['VAppBar']
     VAutocomplete: typeof import('vuetify/components')['VAutocomplete']
-    VAvatar: typeof import('vuetify/components')['VAvatar']
     VBtn: typeof import('vuetify/components')['VBtn']
     VBtnToggle: typeof import('vuetify/components')['VBtnToggle']
     VCard: typeof import('vuetify/components')['VCard']

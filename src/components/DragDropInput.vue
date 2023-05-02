@@ -24,7 +24,7 @@
 		ref="inputFile"
 		type="file"
 		class="hidden"
-		@change="(e: HTMLInputEvent) => onSelectedFile(e as HTMLInputEvent)" />
+		@change="(e: Event) => onSelectedFile(e as HTMLInputEvent)" />
 </template>
 
 <script setup lang="ts">
