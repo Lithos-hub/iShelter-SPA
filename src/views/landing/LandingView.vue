@@ -3,10 +3,10 @@
 		<div class="grid grid-cols-2 gap-5">
 			<CardLayout>
 				<div class="pa-5">
-					<h3 class="text-5xl">{{ `Hola, ${user.name}! 😃` }}</h3>
+					<h3 class="text-5xl">{{ `¡Hola, ${user.name}! 😃` }}</h3>
 
 					<div class="mt-5">
-						<strong class="block">Tienes avisos importantes! 🔔 </strong>
+						<strong class="block">¡Tienes avisos importantes! 🔔 </strong>
 						<v-btn class="text-none mt-5" color="primary">Ver avisos</v-btn>
 					</div>
 				</div>

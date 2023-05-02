@@ -10,6 +10,10 @@ const pinia = createPinia();
 
 import '@/scss/index.scss';
 
+// Motion
+
+import { MotionPlugin } from '@vueuse/motion';
+
 // VCalendar
 import VCalendar from 'v-calendar';
 import 'v-calendar/style.css';
@@ -88,5 +92,6 @@ createApp(App)
 	.use(pinia)
 	.use(vuetify)
 	.use(router)
+	.use(MotionPlugin)
 	.use(VCalendar, {})
 	.mount('#app');

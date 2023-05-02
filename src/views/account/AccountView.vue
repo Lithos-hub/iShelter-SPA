@@ -1,5 +1,5 @@
 <template>
-	<ViewHeader title="Estado financiero" />
+	<ViewHeader title="Mi cuenta" />
 </template>
 
 <script setup lang="ts"></script>

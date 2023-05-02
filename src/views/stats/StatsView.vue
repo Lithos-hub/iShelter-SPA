@@ -1,7 +1,5 @@
 <template>
-	<section class="mb-5">
-		<h1 class="text-5xl font-bold text-secondary-1">Estadísticas</h1>
-	</section>
+	<ViewHeader title="Estadísticas" />
 	<section class="mb-5">
 		<CardLayout class="p-5 text-black">
 			<div class="max-h-[350px] overflow-y-auto p-5 flex flex-col gap-5 text-justify">

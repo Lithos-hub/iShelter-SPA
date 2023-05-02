@@ -3,6 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
 	{
+		path: '/:pathMatch(.*)*',
+		name: 'NotFound',
+		component: () => import(/* webpackChunkName: "home" */ '@/views/404/NotFoundView.vue'),
+	},
+	{
 		path: '/',
 		component: () => import('@/AppLayout.vue'),
 		children: [
@@ -10,6 +15,11 @@ const routes = [
 				path: '',
 				name: 'Home',
 				component: () => import(/* webpackChunkName: "home" */ '@/views/landing/LandingView.vue'),
+			},
+			{
+				path: '/account',
+				name: 'Account',
+				component: () => import(/* webpackChunkName: "home" */ '@/views/account/AccountView.vue'),
 			},
 			{
 				path: '/organization',

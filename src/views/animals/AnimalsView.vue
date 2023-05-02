@@ -1,20 +1,10 @@
 <template>
-	<section class="flex justify-between mb-5 items-center">
-		<h1 class="text-5xl font-bold text-secondary-1">Animales</h1>
-		<BaseButton
-			title="Añadir nuevo animal"
-			rounded="pill"
-			size="large"
-			@click="dialog = !dialog" />
-		<FullScreenDialog
-			:open="dialog"
-			title="Añadir nuevo animal"
-			@close="dialog = !dialog">
-			<div class="p-5">
-				<!-- <FormGenerator :components="componentsList" /> -->
-			</div>
-		</FullScreenDialog>
-	</section>
+	<ViewHeader title="Animales" button-text="Añadir nuevo animal" @action="dialog = !dialog" />
+	<FullScreenDialog :open="dialog" title="Añadir nuevo animal" @close="dialog = !dialog">
+		<div class="p-5">
+			<!-- <FormGenerator :components="componentsList" /> -->
+		</div>
+	</FullScreenDialog>
 	<section class="mb-5">
 		<Filters :is-loading="isLoading" />
 	</section>
@@ -22,11 +12,8 @@
 		<BaseSpinner v-if="isLoading" />
 		<section
 			v-else-if="animalsData?.data.length"
-			class="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-4 gap-10">
-			<ListCard
-				v-for="(animal, i) of animalsData?.data"
-				:key="i"
-				:data="animal" />
+			class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10">
+			<ListCard v-for="(animal, i) of animalsData?.data" :key="i" :data="animal" />
 		</section>
 		<section v-else>
 			<NoDataMessage

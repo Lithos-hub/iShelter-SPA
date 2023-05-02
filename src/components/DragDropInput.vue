@@ -4,8 +4,7 @@
 		<div
 			class="container text-primary-1 p-5 flex flex-col justify-center text-center items-center duration-200 w-full h-full"
 			:class="{
-				'shadow-xl drag-and-drop__inner bg-opacity-20 scale-105 bg-primary-1':
-					isDragging,
+				'shadow-xl drag-and-drop__inner bg-opacity-20 scale-105 bg-primary-1': isDragging,
 				'border border-slate-500 rounded-xl shadow': !isDragging,
 			}"
 			@dragover.prevent="isDragging = true"
@@ -16,9 +15,7 @@
 				<p>{{ selectedFile.name }}</p>
 			</div>
 			<div class="font-bold flex flex-col gap-5">
-				<h3 class="text-black">
-					Arrastra o selecciona un archivo de tu ordenador
-				</h3>
+				<h3 class="text-black">Arrastra o selecciona un archivo de tu ordenador</h3>
 				<BaseButton title="Seleccionar imagen" @click="inputFile?.click()" />
 			</div>
 		</div>
@@ -27,7 +24,7 @@
 		ref="inputFile"
 		type="file"
 		class="hidden"
-		@change="(e) => onSelectedFile(e as HTMLInputEvent)" />
+		@change="(e: Event) => onSelectedFile(e as HTMLInputEvent)" />
 </template>
 
 <script setup lang="ts">
@@ -72,10 +69,7 @@ const onDrop = (event: DragEvent) => {
 	const type = file.type;
 
 	if (!type.includes('image')) {
-		showSnackbar(
-			'error',
-			'Formato de archivo incorrecto. Sólo se admiten imágenes.'
-		);
+		showSnackbar('error', 'Formato de archivo incorrecto. Sólo se admiten imágenes.');
 	} else {
 		if (file) {
 			selectedFile.value = files[0];
@@ -115,8 +109,7 @@ const onDrop = (event: DragEvent) => {
 		background-position: left top, right bottom, left bottom, right top;
 	}
 	100% {
-		background-position: left 15px top, right 15px bottom, left bottom 15px,
-			right top 15px;
+		background-position: left 15px top, right 15px bottom, left bottom 15px, right top 15px;
 	}
 }
 </style>

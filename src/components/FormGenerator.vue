@@ -3,9 +3,7 @@
 <template>
 	<v-form ref="generatorRef" class="grid grid-cols-12 gap-5" v-bind="$attrs">
 		<div
-			v-for="(
-				{ colStart, colEnd, renderElement, name, rules, items, ...rest }, i
-			) of components"
+			v-for="({ colStart, colEnd, renderElement, name, rules, items, ...rest }, i) of components"
 			:key="i"
 			:style="{ 'grid-column-start': colStart, 'grid-column-end': colEnd }">
 			<v-text-field
@@ -101,7 +99,7 @@
 			<DragDropInput
 				v-if="renderElement === 'dragdropinput'"
 				:label="rest.label!"
-				@select="(data) => vModelForm[name as keyof typeof vModelForm] = data" />
+				@select="(data: File) => vModelForm[name as keyof typeof vModelForm] = data" />
 		</div>
 	</v-form>
 </template>

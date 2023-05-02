@@ -1,7 +1,5 @@
 <template>
-	<div>
-		<h1>Follow up</h1>
-	</div>
+	<ViewHeader title="Seguimiento" />
 </template>
 
 <script setup lang="ts"></script>

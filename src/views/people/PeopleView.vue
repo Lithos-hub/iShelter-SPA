@@ -1,20 +1,10 @@
 <template>
-	<section class="flex justify-between mb-5 items-center">
-		<h1 class="text-5xl font-bold text-secondary-1">Personas</h1>
-		<BaseButton
-			title="Añadir nueva persona"
-			rounded="pill"
-			size="large"
-			@click="dialog = !dialog" />
-		<FullScreenDialog
-			:open="dialog"
-			title="Añadir nueva persona"
-			@close="dialog = !dialog">
-			<div class="p-5">
-				<!-- <FormGenerator :components="componentsList" /> -->
-			</div>
-		</FullScreenDialog>
-	</section>
+	<ViewHeader title="Personas" button-text="Añadir nueva persona" @action="dialog = !dialog" />
+	<FullScreenDialog :open="dialog" title="Añadir nueva persona" @close="dialog = !dialog">
+		<div class="p-5">
+			<!-- <FormGenerator :components="componentsList" /> -->
+		</div>
+	</FullScreenDialog>
 	<section class="mb-5">
 		<DataFilters :is-loading="isLoading" />
 	</section>
@@ -22,11 +12,8 @@
 		<base-spinner v-if="isLoading" />
 		<section
 			v-else-if="peopleData?.data.length"
-			class="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-4 gap-10">
-			<PeopleCard
-				v-for="(person, i) of peopleData?.data"
-				:key="i"
-				:data="person" />
+			class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10">
+			<PeopleCard v-for="(person, i) of peopleData?.data" :key="i" :data="person" />
 		</section>
 		<section v-else>
 			<NoDataMessage

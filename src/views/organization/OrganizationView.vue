@@ -1,21 +1,17 @@
 <template>
-	<section class="flex justify-between mb-5 items-center">
-		<h1 class="text-5xl font-bold text-secondary-1">Mi organización</h1>
-		<BaseButton
-			title="Añadir nuevo usuario"
-			rounded="pill"
-			size="large"
-			@click="dialog = !dialog" />
-		<FullScreenDialog
-			:open="dialog"
-			title="Añadir nuevo usuario"
-			@close="dialog = !dialog"
-			@submit="submitForm">
-			<div class="p-5 px-[15vw]">
-				<FormGenerator :components="componentsList" />
-			</div>
-		</FullScreenDialog>
-	</section>
+	<ViewHeader
+		title="Mi organización"
+		button-text="Añadir nuevo usuario"
+		@action="dialog = !dialog" />
+	<FullScreenDialog
+		:open="dialog"
+		title="Añadir nuevo usuario"
+		@close="dialog = !dialog"
+		@submit="submitForm">
+		<div class="p-5 px-[15vw]">
+			<FormGenerator :components="componentsList" />
+		</div>
+	</FullScreenDialog>
 	<section class="mb-5">
 		<DataFilters :is-loading="isLoading" />
 	</section>
@@ -23,7 +19,7 @@
 		<base-spinner v-if="isLoading" />
 		<section
 			v-else-if="usersData?.data.length"
-			class="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-4 gap-10">
+			class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10">
 			<ListCard v-for="(user, i) of usersData?.data" :key="i" :data="user" />
 		</section>
 		<section v-else>

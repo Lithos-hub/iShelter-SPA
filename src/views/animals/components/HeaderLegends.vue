@@ -1,9 +1,9 @@
 <template>
-	<ul class="grid grid-cols-7 gap-1">
+	<ul class="grid grid-cols-2 md:grid-cols-7 gap-1">
 		<div
 			v-for="({ name, description }, i) of legends"
 			:key="i"
-			class="text-center rounded-full p-2"
+			class="text-center rounded-xl lg:rounded-full p-2 flex flex-col items-center justify-center"
 			:class="getAnimalStatusColor(name)">
 			<div class="text-center" data-testid="legend-status">
 				<small class="text-xs">{{ getAnimalStatusName(name) }}</small>

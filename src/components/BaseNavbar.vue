@@ -1,5 +1,5 @@
 <template>
-	<v-app-bar density="compact" color="primary" flat class="text-white px-10">
+	<v-app-bar density="compact" color="primary" flat class="text-white px-5 fixed">
 		<router-link
 			to="/"
 			class="w-auto relative flex px-4 py-1 bg-white rounded-full hover:scale-105 duration-200">
@@ -12,14 +12,14 @@
 
 		<v-spacer></v-spacer>
 
-		<v-btn icon>
-			<v-icon>mdi-message</v-icon>
-		</v-btn>
-
-		<v-btn icon>
+		<v-btn icon @click="openNotificationsMenu">
 			<v-icon>mdi-bell</v-icon>
 		</v-btn>
-
-		<avatar-menu />
 	</v-app-bar>
+	<NotificationsMenu v-if="isNotificationsOpened" />
 </template>
+
+<script lang="ts" setup>
+const isNotificationsOpened = ref(false);
+const openNotificationsMenu = () => (isNotificationsOpened.value = !isNotificationsOpened.value);
+</script>

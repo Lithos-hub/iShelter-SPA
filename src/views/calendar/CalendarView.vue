@@ -1,20 +1,13 @@
 <template>
-	<section class="flex justify-between mb-5 items-center">
-		<h1 class="text-5xl font-bold text-secondary-1">Calendario</h1>
-	</section>
+	<ViewHeader title="Calendario" />
 	<section class="flex gap-5">
 		<!-- <Calendar expanded /> -->
 		<div class="grow w-full">
-			<DatePicker
-				v-model="date"
-				expanded
-				:attributes="events"
-				color="primary" />
+			<DatePicker v-model="date" expanded :attributes="events" color="primary" />
 		</div>
 		<CardLayout class="max-w-[350px]">
 			<div class="flex flex-col h-full gap-5">
-				<div
-					class="bg-secondary-1 rounded-t-xl px-5 py-1 flex justify-between items-center">
+				<div class="bg-secondary-1 rounded-t-xl px-5 py-1 flex justify-between items-center">
 					<h2 class="font-bold text-white text-2xl mx-auto">
 						{{ date.toLocaleDateString() }}
 					</h2>
@@ -23,11 +16,8 @@
 					<div>
 						<div class="text-center mx-auto mb-2">
 							Tienes
-							<strong class="text-primary-1">{{
-								selectedDateEvents.length
-							}}</strong>
-							{{ selectedDateEvents.length === 1 ? 'evento' : 'eventos' }} este
-							día
+							<strong class="text-primary-1">{{ selectedDateEvents.length }}</strong>
+							{{ selectedDateEvents.length === 1 ? 'evento' : 'eventos' }} este día
 						</div>
 						<ul
 							v-if="selectedDateEvents.length > 0"
@@ -36,9 +26,7 @@
 								v-for="(calendarEvent, i) of selectedDateEvents"
 								:key="i"
 								:class="`bg-${calendarEvent.dot}-300 border border-${calendarEvent.dot}-500 text-sm font-bold rounded-full hover:scale-105 duration-200 cursor-pointer flex justify-between items-center px-1`">
-								<div
-									class="w-full h-full p-4"
-									@click="onSelectEvent(calendarEvent)">
+								<div class="w-full h-full p-4" @click="onSelectEvent(calendarEvent)">
 									{{ calendarEvent.title }}
 								</div>
 								<v-btn
@@ -62,9 +50,7 @@
 							v-for="color in pickerColors"
 							:key="color"
 							:class="`${color} h-7 w-7 rounded-full hover:bg-opacity-50 cursor-pointer border-2  ${
-								selectedColor === color
-									? 'border-slate-800'
-									: 'border-transparent'
+								selectedColor === color ? 'border-slate-800' : 'border-transparent'
 							}`"
 							@click="onSelectEventColor(color)"></div>
 					</div>
@@ -177,13 +163,7 @@ watch(date, () => {
 });
 
 const onSelectEventColor = (color: string) => (selectedColor.value = color);
-const onSelectEvent = ({
-	title,
-	description,
-}: {
-	title: string;
-	description: string;
-}) => {
+const onSelectEvent = ({ title, description }: { title: string; description: string }) => {
 	setVModelForm({
 		title,
 		description,
@@ -195,10 +175,7 @@ const onDeleteCalendarEvent = (id: number) => {
 	// Delete event and refresh
 };
 const selectedDateEvents = computed(() =>
-	events.value.filter(
-		({ dates }) =>
-			dates.toLocaleDateString() === date.value.toLocaleDateString()
-	)
+	events.value.filter(({ dates }) => dates.toLocaleDateString() === date.value.toLocaleDateString())
 );
 
 const addEvent = () => {
