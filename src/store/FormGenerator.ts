@@ -3,7 +3,7 @@ import { defineStore } from 'pinia';
 
 type vModelForm = Record<
 	string,
-	string | number | boolean | string[] | number[] | undefined
+	string | number | boolean | string[] | number[] | undefined | File
 >;
 
 interface RootState {

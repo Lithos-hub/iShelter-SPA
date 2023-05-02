@@ -1,5 +1,5 @@
 <template>
-	<div>Account</div>
+	<ViewHeader title="Mi cuenta" />
 </template>
 
 <script setup lang="ts"></script>

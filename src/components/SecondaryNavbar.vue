@@ -1,13 +1,10 @@
 <template>
 	<v-app-bar v-if="width < 1350" density="compact" color="black" flat class="text-white">
-		<!-- <div v-if="width > 1350" class="flex mx-auto">
-			<NavigationMenu v-for="(item, i) of menuItems" :key="i" :menu-item="item" />
-		</div> -->
 		<div class="flex gap-5 mx-auto">
 			<v-btn variant="text" icon="mdi-menu" @click="drawer = !drawer"></v-btn>
 		</div>
 	</v-app-bar>
-	<v-navigation-drawer v-if="width > 1350" expand-on-hover rail color="black">
+	<v-navigation-drawer v-if="width > 1350" expand-on-hover rail color="black" class="fixed">
 		<v-list>
 			<v-list-item
 				prepend-avatar="https://this-person-does-not-exist.com/img/avatar-11326f146110d286731a8bc4b9b072f4.jpg"
@@ -27,6 +24,14 @@
 				:active="currentRoute === to"
 				@click="goTo(to)" />
 		</v-list>
+		<v-list class="absolute bottom-0 w-full">
+			<v-list-item
+				prepend-icon="mdi-exit-to-app"
+				title="Cerrar sesión"
+				color="red"
+				class="text-red-500"
+				@click="logout" />
+		</v-list>
 	</v-navigation-drawer>
 	<v-navigation-drawer v-else v-model="drawer" location="top" class="bg-black h-auto" temporary>
 		<ul class="w-[75vw] grid grid-cols-3 mx-auto justify-center items-center py-5 bg-black">
@@ -37,14 +42,15 @@
 
 <script lang="ts" setup>
 import { useDisplay } from 'vuetify';
-import { useRouter } from 'vue-router';
+import { useRouter, useRoute } from 'vue-router';
 
 const { width } = useDisplay();
 
 const drawer = ref(false);
 const router = useRouter();
+const route = useRoute();
 
-const currentRoute = computed(() => router.options.history.location);
+const currentRoute = computed(() => route.path);
 
 const menuItems = [
 	{
@@ -92,12 +98,9 @@ const menuItems = [
 		to: '/financial',
 		icon: 'mdi-currency-eur',
 	},
-	{
-		title: 'Cerrar sesión',
-		to: '/logout',
-		icon: 'mdi-exit-to-app',
-	},
 ];
 
 const goTo = (to: string) => router.push(to);
+
+const logout = () => console.log('logout');
 </script>

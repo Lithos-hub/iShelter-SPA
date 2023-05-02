@@ -1,25 +1,23 @@
 <template>
-	<section class="flex justify-between mb-5 items-center">
-		<h1 class="text-5xl font-bold text-secondary-1">Solicitudes</h1>
-	</section>
+	<ViewHeader title="Solicitudes" />
 	<section class="mb-5">
 		<DataFilters :is-loading="isLoading" />
 	</section>
 	<section class="mb-5">
-		<div class="grid grid-cols-7 px-5 gap-10 text-center">
+		<div class="grid grid-cols-7 px-5 gap-10 text-center text-primary-1">
 			<div />
-			<strong class="text-primary-1">Estado</strong>
-			<strong class="text-primary-1">Nombre</strong>
-			<strong class="text-primary-1">Email</strong>
-			<strong class="text-primary-1">Teléfono</strong>
-			<strong class="text-primary-1">Marcar como</strong>
-			<strong class="text-primary-1">Acción</strong>
+			<strong>Estado</strong>
+			<strong>Nombre</strong>
+			<strong>Email</strong>
+			<strong>Teléfono</strong>
+			<strong>Marcar como</strong>
+			<strong>Acción</strong>
 		</div>
 	</section>
 	<section>
 		<ul class="flex flex-col gap-1">
 			<li
-				v-for="(item, i) of applicationsData?.data"
+				v-for="(item, i) of applicationsData?.data as Application[]"
 				:key="i"
 				class="bg-white shadow-xl px-5 py-5 grid grid-cols-7 gap-10 text-center relative items-center">
 				<div />
@@ -75,6 +73,7 @@ import CategoryChip from './components/CategoryChip.vue';
 
 import { useApplicationsQuery } from '@/services/apis/applications';
 import { getApplicationStatusColor, getApplicationStatusName } from '@/utils/applications';
+import { Application } from '@/models';
 
 const { data: applicationsData, isLoading } = useApplicationsQuery();
 

@@ -23,7 +23,7 @@ export interface FormGeneratorInterface {
 	/* REQUIRED */ name: string;
 	/* REQUIRED */ colStart: number;
 	/* REQUIRED */ colEnd: number;
-	initialValue:
+	/* REQUIRED */ initialValue:
 		| string
 		| number
 		| string[]
