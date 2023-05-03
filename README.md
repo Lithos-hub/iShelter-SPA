@@ -2,7 +2,9 @@
 
 ![logo](https://user-images.githubusercontent.com/57297760/235951570-06e80cb9-4e08-4c7d-8dd1-099f98972b8d.jpg)
 
-Web application to manage an animal shelter.
+iShelter is a non-profit application designed to help animal shelters in Spain in the management of their shelters, animals, adoption processes, personnel and other issues related to it.
+
+For now, the only language available is Spanish, but in the future it may be possible to use internationalization, depending on the reception of the tool.
 
 ## Setup
 
