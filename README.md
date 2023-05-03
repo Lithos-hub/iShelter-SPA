@@ -1,5 +1,7 @@
 # iShelter
 
+![logo](https://user-images.githubusercontent.com/57297760/235951570-06e80cb9-4e08-4c7d-8dd1-099f98972b8d.jpg)
+
 Web application to manage an animal shelter.
 
 ## Setup
