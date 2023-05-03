@@ -1,14 +1,42 @@
 <template>
-	<v-card class="fixed top-10 right-0 z-50" width="350">
-		<v-toolbar color="white">
-			<v-toolbar-title>Avisos</v-toolbar-title>
+	<v-card class="fixed top-10 right-5 z-50" width="400">
+		<v-toolbar color="white" class="p-2">
+			<v-toolbar-title v-if="!isSearching">Avisos</v-toolbar-title>
 
-			<v-spacer></v-spacer>
+			<v-spacer v-if="!isSearching"></v-spacer>
 
-			<v-btn variant="text" icon="mdi-magnify"></v-btn>
+			<v-btn
+				v-if="!isSearching"
+				variant="text"
+				icon="mdi-magnify"
+				@click="isSearching = !isSearching" />
+
+			<v-text-field
+				v-else
+				v-model="searchQuery"
+				v-motion
+				placeholder="Buscar"
+				class="max-w-[320px] mt-10 mx-auto"
+				variant="solo"
+				append-inner-icon="mdi-close"
+				:initial="{
+					opacity: 0,
+				}"
+				:enter="{
+					opacity: 1,
+					transition: {
+						type: 'spring',
+						stiffness: 250,
+						damping: 100,
+						mass: 5,
+					},
+				}"
+				@click:append-inner="isSearching = !isSearching" />
 		</v-toolbar>
 
-		<v-list density="compact" :items="items" item-props lines="two" nav />
+		<div class="max-h-[50vh] overflow-y-auto">
+			<v-list density="compact" :items="items" item-props lines="two" nav />
+		</div>
 	</v-card>
 </template>
 
@@ -63,4 +91,6 @@ const items = ref([
 	},
 	{ type: 'divider', inset: true },
 ]);
+const isSearching = ref(false);
+const searchQuery = ref('');
 </script>

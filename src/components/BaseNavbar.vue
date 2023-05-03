@@ -17,6 +17,10 @@
 		</v-btn>
 	</v-app-bar>
 	<NotificationsMenu v-if="isNotificationsOpened" />
+	<div
+		v-if="isNotificationsOpened"
+		class="fixed h-full w-full z-10 backdrop-blur bg-black/50"
+		@click="isNotificationsOpened = false" />
 </template>
 
 <script lang="ts" setup>
